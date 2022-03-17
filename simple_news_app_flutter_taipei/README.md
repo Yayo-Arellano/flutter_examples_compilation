@@ -1,4 +1,6 @@
-# Simple News App using Cubit ([flutter_bloc](https://pub.dev/packages/flutter_bloc)): Flutter Festival Taipei
+# Flutter Festival Taipei
+
+## Simple News App using Cubit ([flutter_bloc](https://pub.dev/packages/flutter_bloc))
 
 Flutter Version: Stable 2.10.3
 
@@ -18,20 +20,24 @@ Flutter Version: Stable 2.10.3
     static const String _apiKey = 'Change to your own api key';
   ````
 
-- Run the command `flutter pub run build_runner watch --delete-conflicting-outputs` to generate the code.
+- Run the command `flutter pub run build_runner watch --delete-conflicting-outputs` to generate the
+  code.
 
 # Architecture
+
 We separate in three layer:
+
 - Presentation
 - Business Logic
 - Data: Repositories, Data sources.
-  ![Architecture](https://github.com/Yayo-Arellano/flutter_bloc_architecture/blob/master/images/Architecture.png?raw=true)
-
-
+  ![Architecture](screenshots/architecture.png)
 
 # Screenshots
 
 | Success Response | Handle ApiKey Invalid |
 | ---------------- | --------------------- |
-| ![Image 1](https://github.com/Yayo-Arellano/flutter_bloc_architecture/blob/master/images/Image%201.png?raw=true) |![Image 2](https://github.com/Yayo-Arellano/flutter_bloc_architecture/blob/master/images/Image%202.png?raw=true) |
+| ![Image 1](screenshots/image%201.png) |![Image 2](screenshots/image%202.png) |
 
+# Youtube Video (English)
+
+[![Youtube](screenshots/youtube.png)](https://youtu.be/6l5fJ3JGL6A)
