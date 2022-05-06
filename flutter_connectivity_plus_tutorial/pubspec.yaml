@@ -1,0 +1,29 @@
+name: flutter_connectivity_tutorial
+description: Learn how to check if your app has internet connection
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.16.2 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  get: ^4.6.1
+  provider: ^6.0.2
+  flutter_bloc: ^8.0.1
+
+  rxdart: ^0.27.3
+  connectivity_plus: ^2.3.0
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.1
+
+
+flutter:
+  uses-material-design: true

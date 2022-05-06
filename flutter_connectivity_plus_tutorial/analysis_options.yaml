@@ -1,0 +1,14 @@
+include: package:lints/recommended.yaml
+
+analyzer:
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.gr.dart"
+    - "**/*.freezed.dart"
+    - "**/*.mocks.dart"
+  errors:
+    invalid_annotation_target: ignore
+    body_might_complete_normally_nullable: ignore
+linter:
+  rules:
+    prefer_const_constructors: true
