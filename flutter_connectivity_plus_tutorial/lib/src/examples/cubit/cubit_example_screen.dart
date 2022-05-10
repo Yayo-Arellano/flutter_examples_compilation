@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_connectivity_tutorial/src/examples/cubit/connection_status_cubit.dart';
-import 'package:flutter_connectivity_tutorial/src/utils/check_internet_connection.dart';
+import 'package:flutter_connectivity_tutorial/src/examples/cubit/warning_widget_cubit.dart';
+import 'package:flutter_connectivity_tutorial/src/examples/fake_user_list.dart';
 
 class CubitExampleScreen extends StatelessWidget {
   const CubitExampleScreen();
@@ -12,24 +11,11 @@ class CubitExampleScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Cubit Example'),
       ),
-      body: BlocProvider(
-        create: (context) => ConnectionStatusCubit(),
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              const Text('The device has access to the Internet:'),
-              BlocBuilder<ConnectionStatusCubit, ConnectionStatus>(
-                builder: (_, state) {
-                  return Text(
-                    state == ConnectionStatus.online ? 'True' : 'False',
-                    style: Theme.of(context).textTheme.headline4,
-                  );
-                },
-              ),
-            ],
-          ),
-        ),
+      body: Column(
+        children: <Widget>[
+          const WarningWidgetCubit(),
+          const FakeUserList(),
+        ],
       ),
     );
   }
