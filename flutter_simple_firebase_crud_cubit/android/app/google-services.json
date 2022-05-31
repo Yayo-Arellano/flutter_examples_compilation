@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "925019682416",
+    "firebase_url": "https://address-book-prod.firebaseio.com",
+    "project_id": "address-book-prod",
+    "storage_bucket": "address-book-prod.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:925019682416:android:9b50a4128d4c91201426b5",
+        "android_client_info": {
+          "package_name": "com.arzensoft.address_book"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "925019682416-duvllfhr13hub3fs150uekm6kh483eu1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDO95eXGHblC1CHvsZiBof0CEYv9ycx9qg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "925019682416-duvllfhr13hub3fs150uekm6kh483eu1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "925019682416-2s33mbmpcaj9old3dk56cgrt8o8qb973.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.nopalsoft.flutterSimpleFirebaseCrudCubit"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:925019682416:android:3de11c045ffa4fd51426b5",
+        "android_client_info": {
+          "package_name": "com.nopalsoft.flutter_simple_firebase_crud_cubit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "925019682416-duvllfhr13hub3fs150uekm6kh483eu1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDO95eXGHblC1CHvsZiBof0CEYv9ycx9qg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "925019682416-duvllfhr13hub3fs150uekm6kh483eu1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "925019682416-2s33mbmpcaj9old3dk56cgrt8o8qb973.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.nopalsoft.flutterSimpleFirebaseCrudCubit"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
