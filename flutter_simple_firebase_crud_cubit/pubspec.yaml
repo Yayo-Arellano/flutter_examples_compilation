@@ -1,0 +1,38 @@
+name: flutter_simple_firebase_crud_cubit
+description: A new Flutter project.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  get_it: ^7.2.0
+  cloud_firestore: ^3.1.17
+  firebase_auth: ^3.3.19
+  firebase_core: ^1.17.1
+  firebase_storage: ^10.2.17
+  flutter_bloc: ^8.0.0
+  equatable: ^2.0.3
+  page_indicator: ^0.4.1
+  image_picker: ^0.8.4+4
+  cached_network_image: ^3.1.0+1
+  flutterfire_ui: ^0.4.1+2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+  bloc_test: ^9.0.3
+  mocktail: ^0.3.0
+
+
+flutter:
+
+  uses-material-design: true
+  assets:
+    - assets/
