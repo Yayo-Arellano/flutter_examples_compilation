@@ -1,0 +1,24 @@
+name: flutter_easy_localization
+description: Learn how to add support for many languages with easy localization
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.14.4 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  easy_localization: ^3.0.0
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/translations/
