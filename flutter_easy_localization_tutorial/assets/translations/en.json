@@ -1,0 +1,24 @@
+{
+  "app_title": "Flutter Easy Localization Tutorial",
+  "choose_an_option": "Choose an option",
+  "counter": "Counter",
+  "form": "Form",
+  "required_field": "This is a required field",
+  "password_length": "Password should be at least 6 letters",
+  "password_match": "Passwords do not match",
+  "email": "Email",
+  "password": "Password",
+  "repeat_password": "Repeat password",
+  "submit": "Submit",
+  "submit_success": "Account created!!!",
+  "counter_description": "The count is:",
+  "increase": "Increase",
+  "decrease": "Decrease",
+  "press_times": {
+    "zero": "{} times",
+    "one": "{} time",
+    "two": "{} times",
+    "many": "{} times",
+    "other": "{} times"
+  }
+}

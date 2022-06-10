@@ -1,16 +1,26 @@
-# flutter_simple_firebase_crud_riverpod
+## Flutter: Simple CRUD with Firebase & Riverpod
 
-A new Flutter project.
+- [FlutterFire UI](https://pub.dev/packages/flutterfire_ui): Login with Google, Facebook & Email
+- Manage the state with [Riverpod](https://pub.dev/packages/flutter_riverpod)
+- Simple CRUD to firestore Read & Write.
+- Upload and delete images to firebase storage
+- Separate the app in multiple layers (presentation, business logic, data)
+- Cubit tests
 
-## Getting Started
+# Videotutorial
 
-This project is a starting point for a Flutter application.
+<a href="https://youtu.be/8QW39PYRDvQ"> <img src="screenshots/youtube.png" width="70%"/></a>
 
-A few resources to get you started if this is your first Flutter project:
+# Architecture
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+[//]: # (<img src="screenshots/Architecture.png" width="600">)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Workflow
+
+[//]: # (<img src="screenshots/Workflow.png" width="600">)
+
+# Screenshots
+
+| Login screen                                    | Create or edit user                             | User list                                       |
+|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|
+| <img src="screenshots/image2.png" height="520"> | <img src="screenshots/image1.png" height="520"> | <img src="screenshots/image3.png" height="520"> |

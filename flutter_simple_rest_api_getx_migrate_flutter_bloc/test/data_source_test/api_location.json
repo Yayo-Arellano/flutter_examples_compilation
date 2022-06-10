@@ -1,0 +1,30 @@
+{
+  "results": [
+    {
+      "location": {
+        "street": {
+          "number": 2159,
+          "name": "Mcclellan Rd"
+        },
+        "city": "Cairns",
+        "state": "Victoria",
+        "country": "Australia",
+        "postcode": 8641,
+        "coordinates": {
+          "latitude": "-84.4848",
+          "longitude": "96.7122"
+        },
+        "timezone": {
+          "offset": "+4:30",
+          "description": "Kabul"
+        }
+      }
+    }
+  ],
+  "info": {
+    "seed": "c5720106ec49ba1f",
+    "results": 1,
+    "page": 1,
+    "version": "1.3"
+  }
+}

@@ -1,0 +1,28 @@
+name: best_architecture_challenge
+description: A new Flutter project.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.14.4 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  equatable: ^2.0.3
+  flutter_bloc: ^8.0.0
+  http: ^0.13.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  bloc_test: ^9.0.1
+  build_runner: ^2.1.5
+  json_serializable: ^6.0.1
+
+flutter:
+
+  uses-material-design: true
