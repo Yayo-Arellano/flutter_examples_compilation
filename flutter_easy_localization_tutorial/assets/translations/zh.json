@@ -1,0 +1,24 @@
+{
+  "app_title": "Flutter Easy Localization 的教程",
+  "choose_an_option": "選擇一個選項",
+  "counter": "櫃檯",
+  "form": "形式",
+  "required_field": "這是一個必填字段",
+  "password_length": "密碼至少應為6個字母",
+  "password_match": "密碼不匹配",
+  "email": "電子郵件",
+  "password": "密碼",
+  "repeat_password": "重複輸入密碼",
+  "submit": "提交",
+  "submit_success": "帳戶已創建！！！",
+  "counter_description": "計數為：",
+  "increase": "增加",
+  "decrease": "減少",
+  "press_times": {
+    "zero": "{} 次",
+    "one": "{} 次",
+    "two": "{} 次",
+    "many": "{} 次",
+    "other": "{} 次"
+  }
+}

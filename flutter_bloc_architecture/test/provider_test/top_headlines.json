@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "totalResults": 2,
+  "articles": [
+    {
+      "source": {
+        "id": "cbs-news",
+        "name": "CBS News"
+      },
+      "author": "Sophie Lewis",
+      "title": "\"Bachelor\" host Chris Harrison is temporarily \"stepping aside\" after \"excusing historical racism\" - CBS News",
+      "description": "\"By excusing historical racism, I defended it,\" Harrison wrote, announcing he will not host the \"After the Final Rose\" live special.",
+      "url": "https://www.cbsnews.com/news/chris-harrison-the-bachelor-stepping-aside-comments-rachel-lindsay-backlash/",
+      "urlToImage": "https://cbsnews1.cbsistatic.com/hub/i/r/2021/02/12/0cf2794b-2b04-4ced-84ce-1d72e26ed2cb/thumbnail/1200x630/8d464cc0fdf23566bbea2e01c41401ab/gettyimages-1204035255.jpg",
+      "publishedAt": "2021-02-14T12:18:00Z",
+      "content": "Chris Harrison, the longtime host of \"The Bachelor\" and \"The Bachelorette,\" announced Saturday that he is \"stepping aside\" from the franchise for an undisclosed \"period of time.\" The bombshell announ… [+7754 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "KOCO Oklahoma City"
+      },
+      "author": "KOCO Staff",
+      "title": "Winter storm brings heavy snow, causing hazardous driving conditions across Oklahoma - KOCO Oklahoma City",
+      "description": "A winter storm moving across Oklahoma Sunday morning is dumping heavy snow, causing hazardous driving conditions.",
+      "url": "https://www.koco.com/article/winter-storm-brings-heavy-snow-causing-hazardous-driving-conditions-across-oklahoma/35500508",
+      "urlToImage": "https://kubrick.htvapps.com/htv-prod-media.s3.amazonaws.com/images/poster-image-2021-02-14t060232-115-1613304161.jpg?crop=1.00xw:1.00xh;0,0&resize=1200:*",
+      "publishedAt": "2021-02-14T12:17:00Z",
+      "content": "OKLAHOMA CITY —A winter storm moving across Oklahoma Sunday morning is dumping heavy snow, causing hazardous driving conditions. \r\n[Check latest weather alerts in your area | Check live traffic condi… [+2381 chars]"
+    }
+  ]
+}

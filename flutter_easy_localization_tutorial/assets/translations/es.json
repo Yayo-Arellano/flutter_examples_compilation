@@ -1,0 +1,24 @@
+{
+  "app_title": "Curso de Flutter Easy Localization",
+  "choose_an_option": "Selecciona una opción",
+  "counter": "Contador",
+  "form": "Forma",
+  "required_field": "Este es un campo requerido",
+  "password_length": "La contraseña debe tener mínimo 6 caracteres",
+  "password_match": "Las contraseñas no coinciden",
+  "email": "Correo electrónico",
+  "password": "Contraseña",
+  "repeat_password": "Repetir contraseña",
+  "submit": "Enviar",
+  "submit_success": "Cuenta creada",
+  "counter_description": "La cuenta es:",
+  "increase": "Incrementar",
+  "decrease": "Decrementar",
+  "press_times": {
+    "zero": "{} veces",
+    "one": "{} vez",
+    "two": "{} veces",
+    "many": "{} veces",
+    "other": "{} veces"
+  }
+}
