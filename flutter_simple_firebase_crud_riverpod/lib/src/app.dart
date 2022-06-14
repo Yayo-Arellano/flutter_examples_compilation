@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_simple_firebase_crud_riverpod/src/cubit/auth_cubit.dart';
 import 'package:flutter_simple_firebase_crud_riverpod/src/navigation/routes.dart';
-import 'package:riverpod/riverpod.dart';
+import 'package:flutter_simple_firebase_crud_riverpod/src/notifiers/auth_notifier.dart';
 
-final authProvider = StateNotifierProvider<AuthCubit, AuthState>((ref) {
-  return AuthCubit()..init();
+final authProvider = StateNotifierProvider<AuthNotifier, AuthState>((ref) {
+  return AuthNotifier()..init();
 });
 
 final _navigatorKey = GlobalKey<NavigatorState>();

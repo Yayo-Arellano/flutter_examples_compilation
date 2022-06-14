@@ -2,14 +2,14 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_simple_firebase_crud_riverpod/src/cubit/edit_my_user_cubit.dart';
+import 'package:flutter_simple_firebase_crud_riverpod/src/notifiers/edit_my_user_notifier.dart';
 import 'package:flutter_simple_firebase_crud_riverpod/src/model/my_user.dart';
 import 'package:flutter_simple_firebase_crud_riverpod/src/ui/widgets/custom_image.dart';
 import 'package:image_picker/image_picker.dart';
 
 final editMyUserProvider =
-    ChangeNotifierProvider.family<EditMyUserCubit, MyUser?>((ref, myUser) {
-  return EditMyUserCubit(myUser);
+    ChangeNotifierProvider.family<EditMyUserNotifier, MyUser?>((ref, myUser) {
+  return EditMyUserNotifier(myUser);
 });
 
 class EditMyUserScreen extends ConsumerWidget {
@@ -20,7 +20,7 @@ class EditMyUserScreen extends ConsumerWidget {
     final userToEdit = ModalRoute.of(context)?.settings.arguments as MyUser?;
 
     final homeScreen = ref.watch(editMyUserProvider(userToEdit));
-    ref.listen<EditMyUserCubit>(editMyUserProvider(userToEdit),
+    ref.listen<EditMyUserNotifier>(editMyUserProvider(userToEdit),
         (previous, next) {
       if (next.isDone) {
         Navigator.of(context).pop();
@@ -35,6 +35,7 @@ class EditMyUserScreen extends ConsumerWidget {
             return Visibility(
               visible: userToEdit != null,
               child: IconButton(
+                key: const Key('Delete'),
                 icon: const Icon(Icons.delete),
                 onPressed: () {
                   homeScreen.deleteMyUser();
@@ -122,16 +123,19 @@ class _MyUserSectionState extends ConsumerState<_MyUserSection> {
             ),
             const SizedBox(height: 8),
             TextField(
+              key: const Key('Name'),
               controller: _nameController,
               decoration: const InputDecoration(labelText: 'Name'),
             ),
             const SizedBox(height: 8),
             TextField(
+              key: const Key('Last Name'),
               controller: _lastNameController,
               decoration: const InputDecoration(labelText: 'Last Name'),
             ),
             const SizedBox(height: 8),
             TextField(
+              key: const Key('Age'),
               controller: _ageController,
               keyboardType: TextInputType.number,
               decoration: const InputDecoration(labelText: 'Age'),

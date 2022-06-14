@@ -5,7 +5,7 @@
 - Simple CRUD to firestore Read & Write.
 - Upload and delete images to firebase storage
 - Separate the app in multiple layers (presentation, business logic, data)
-- Cubit tests
+- Testing
 
 # Videotutorial
 

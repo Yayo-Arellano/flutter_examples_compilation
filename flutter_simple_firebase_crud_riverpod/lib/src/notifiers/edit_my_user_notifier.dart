@@ -6,7 +6,7 @@ import 'package:flutter_simple_firebase_crud_riverpod/main.dart';
 import 'package:flutter_simple_firebase_crud_riverpod/src/model/my_user.dart';
 import 'package:flutter_simple_firebase_crud_riverpod/src/repository/my_user_repository.dart';
 
-class EditMyUserCubit extends ChangeNotifier {
+class EditMyUserNotifier extends ChangeNotifier {
   final MyUserRepository _userRepository = getIt();
 
   MyUser? _toEdit;
@@ -15,7 +15,7 @@ class EditMyUserCubit extends ChangeNotifier {
   bool isLoading = false;
   bool isDone = false;
 
-  EditMyUserCubit(this._toEdit);
+  EditMyUserNotifier(this._toEdit);
 
   void setImage(File? imageFile) async {
     pickedImage = imageFile;

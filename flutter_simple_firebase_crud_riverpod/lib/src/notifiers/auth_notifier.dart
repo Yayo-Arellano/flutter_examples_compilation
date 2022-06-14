@@ -1,14 +1,14 @@
 import 'dart:async';
 
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_simple_firebase_crud_riverpod/main.dart';
 import 'package:flutter_simple_firebase_crud_riverpod/src/repository/auth_repository.dart';
-import 'package:riverpod/riverpod.dart';
 
-class AuthCubit extends StateNotifier<AuthState> {
+class AuthNotifier extends StateNotifier<AuthState> {
   final AuthRepository _authRepository = getIt();
   StreamSubscription? _authSubscription;
 
-  AuthCubit() : super(AuthState.initial);
+  AuthNotifier() : super(AuthState.initial);
 
   Future<void> init() async {
     // Just for testing. Allows the splash screen to be shown a few seconds
