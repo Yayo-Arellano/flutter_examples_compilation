@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:bloc_test/bloc_test.dart';
 import 'package:flutter_simple_firebase_crud_cubit/main.dart';
-import 'package:flutter_simple_firebase_crud_cubit/src/cubit/home_screen_cubit.dart';
+import 'package:flutter_simple_firebase_crud_cubit/src/cubit/home_cubit.dart';
 import 'package:flutter_simple_firebase_crud_cubit/src/model/my_user.dart';
 import 'package:flutter_simple_firebase_crud_cubit/src/repository/my_user_repository.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -21,7 +21,7 @@ void main() {
     getIt.registerSingleton<MyUserRepository>(mockRepo);
   });
 
-  blocTest<HomeScreenCubit, HomeScreenState>(
+  blocTest<HomeCubit, HomeState>(
     'Two users will be emitted correctly',
     build: () {
       when(() => mockRepo.getMyUsers()).thenAnswer((_) {
@@ -29,11 +29,11 @@ void main() {
           [_myUser1, _myUser2]
         ]);
       });
-      return HomeScreenCubit();
+      return HomeCubit();
     },
     act: (cubit) => cubit.init(),
     expect: () => [
-      const HomeScreenState(
+      const HomeState(
         isLoading: false,
         myUsers: [_myUser1, _myUser2],
       )

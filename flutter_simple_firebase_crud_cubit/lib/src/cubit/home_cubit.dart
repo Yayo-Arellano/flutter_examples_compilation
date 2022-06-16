@@ -6,18 +6,18 @@ import 'package:flutter_simple_firebase_crud_cubit/main.dart';
 import 'package:flutter_simple_firebase_crud_cubit/src/model/my_user.dart';
 import 'package:flutter_simple_firebase_crud_cubit/src/repository/my_user_repository.dart';
 
-class HomeScreenCubit extends Cubit<HomeScreenState> {
+class HomeCubit extends Cubit<HomeState> {
   final MyUserRepository _userRepository = getIt();
   StreamSubscription? _myUsersSubscription;
 
-  HomeScreenCubit() : super(const HomeScreenState());
+  HomeCubit() : super(const HomeState());
 
   Future<void> init() async {
     _myUsersSubscription = _userRepository.getMyUsers().listen(myUserListen);
   }
 
   void myUserListen(Iterable<MyUser> myUsers) async {
-    emit(HomeScreenState(
+    emit(HomeState(
       isLoading: false,
       myUsers: myUsers,
     ));
@@ -30,11 +30,11 @@ class HomeScreenCubit extends Cubit<HomeScreenState> {
   }
 }
 
-class HomeScreenState extends Equatable {
+class HomeState extends Equatable {
   final bool isLoading;
   final Iterable<MyUser> myUsers;
 
-  const HomeScreenState({
+  const HomeState({
     this.isLoading = true,
     this.myUsers = const [],
   });

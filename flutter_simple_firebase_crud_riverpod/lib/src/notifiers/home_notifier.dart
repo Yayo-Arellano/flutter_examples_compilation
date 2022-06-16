@@ -5,7 +5,7 @@ import 'package:flutter_simple_firebase_crud_riverpod/main.dart';
 import 'package:flutter_simple_firebase_crud_riverpod/src/model/my_user.dart';
 import 'package:flutter_simple_firebase_crud_riverpod/src/repository/my_user_repository.dart';
 
-class HomeScreenNotifier extends ChangeNotifier {
+class HomeNotifier extends ChangeNotifier {
   final MyUserRepository _userRepository = getIt();
   StreamSubscription? _myUsersSubscription;
 

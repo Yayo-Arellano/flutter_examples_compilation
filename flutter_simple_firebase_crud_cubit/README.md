@@ -11,13 +11,13 @@
 
 <a href="https://youtu.be/8QW39PYRDvQ"> <img src="screenshots/youtube.png" width="70%"/></a>
 
-# Architecture
-
-[//]: # (<img src="screenshots/Architecture.png" width="600">)
-
 # Workflow
 
-[//]: # (<img src="screenshots/Workflow.png" width="600">)
+<img src="screenshots/workflow.png" width="70%">
+
+# Architecture
+
+<img src="screenshots/architecture.png" width="70%">
 
 # Screenshots
 

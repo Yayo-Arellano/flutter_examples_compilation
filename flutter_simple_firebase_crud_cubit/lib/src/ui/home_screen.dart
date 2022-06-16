@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_simple_firebase_crud_cubit/src/cubit/auth_cubit.dart';
-import 'package:flutter_simple_firebase_crud_cubit/src/cubit/home_screen_cubit.dart';
+import 'package:flutter_simple_firebase_crud_cubit/src/cubit/home_cubit.dart';
 import 'package:flutter_simple_firebase_crud_cubit/src/navigation/routes.dart';
 import 'package:flutter_simple_firebase_crud_cubit/src/ui/widgets/custom_image.dart';
 
@@ -30,8 +30,8 @@ class HomeScreen extends StatelessWidget {
         },
       ),
       body: BlocProvider(
-        create: (context) => HomeScreenCubit()..init(),
-        child: BlocBuilder<HomeScreenCubit, HomeScreenState>(
+        create: (context) => HomeCubit()..init(),
+        child: BlocBuilder<HomeCubit, HomeState>(
           builder: (context, state) {
             return ListView.builder(
               itemCount: state.myUsers.length,

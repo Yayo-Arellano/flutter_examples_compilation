@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_simple_firebase_crud_riverpod/src/app.dart';
 import 'package:flutter_simple_firebase_crud_riverpod/src/navigation/routes.dart';
-import 'package:flutter_simple_firebase_crud_riverpod/src/notifiers/home_screen_notifier.dart';
+import 'package:flutter_simple_firebase_crud_riverpod/src/notifiers/home_notifier.dart';
 import 'package:flutter_simple_firebase_crud_riverpod/src/ui/widgets/custom_image.dart';
 
 final homeScreenProvider =
-    ChangeNotifierProvider((ref) => HomeScreenNotifier()..init());
+    ChangeNotifierProvider((ref) => HomeNotifier()..init());
 
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
