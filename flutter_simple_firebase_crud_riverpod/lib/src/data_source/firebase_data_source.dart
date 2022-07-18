@@ -7,6 +7,8 @@ import 'package:flutter_simple_firebase_crud_riverpod/src/model/my_user.dart';
 import 'package:path/path.dart' as path;
 
 class FirebaseDataSource {
+
+  // Helper function to get current authenticated user.
   User get currentUser {
     final user = FirebaseAuth.instance.currentUser;
     if (user == null) throw Exception('Not authenticated exception');
@@ -14,9 +16,9 @@ class FirebaseDataSource {
   }
 
   FirebaseFirestore get firestore => FirebaseFirestore.instance;
-
   FirebaseStorage get storage => FirebaseStorage.instance;
 
+  // Read all documents from MyUser collection from the authenticated user
   Stream<Iterable<MyUser>> getMyUsers() {
     return firestore
         .collection('user/${currentUser.uid}/myUsers')
@@ -24,9 +26,12 @@ class FirebaseDataSource {
         .map((it) => it.docs.map((e) => MyUser.fromFirebaseMap(e.data())));
   }
 
+  // Creates or updates a document in myUser collection. If image is not null
+  // it will create or update the image in Firebase Storage
   Future<void> saveMyUser(MyUser myUser, File? image) async {
     final ref = firestore.doc('user/${currentUser.uid}/myUsers/${myUser.id}');
     if (image != null) {
+
       // Delete current image if exists
       if (myUser.image != null) {
         await storage.refFromURL(myUser.image!).delete();
@@ -40,8 +45,11 @@ class FirebaseDataSource {
     await ref.set(myUser.toFirebaseMap(), SetOptions(merge: true));
   }
 
+  // Deletes the MyUser document. Also will delete the
+  // image from Firebase Storage
   Future<void> deleteMyUser(MyUser myUser) async {
     final ref = firestore.doc('user/${currentUser.uid}/myUsers/${myUser.id}');
+
     // Delete current image if exists
     if (myUser.image != null) {
       await storage.refFromURL(myUser.image!).delete();

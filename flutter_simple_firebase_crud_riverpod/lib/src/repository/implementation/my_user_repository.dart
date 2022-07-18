@@ -6,7 +6,7 @@ import 'package:flutter_simple_firebase_crud_riverpod/src/model/my_user.dart';
 import 'package:flutter_simple_firebase_crud_riverpod/src/repository/my_user_repository.dart';
 
 class MyUserRepositoryImp extends MyUserRepository {
-  final FirebaseDataSource _fDataSource = getIt();
+  final _fDataSource = getIt<FirebaseDataSource>();
 
   @override
   Stream<Iterable<MyUser>> getMyUsers() {

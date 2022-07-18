@@ -11,28 +11,31 @@ import 'package:get_it/get_it.dart';
 
 import 'firebase_options.dart';
 
+// Create a global instance of GetIt that can be user later to
+// retrieve our injected instances
 final getIt = GetIt.instance;
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  // Initialize firebase
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
 
+  // Inject dependencies
   await injectDependencies();
 
-  runApp(
-    const ProviderScope(
-      child: MyApp(),
-    ),
-  );
+  runApp(const MyApp());
 }
 
+// Helper function to inject dependencies
 Future<void> injectDependencies() async {
-  // Data sources
+  // Inject the data source.
   getIt.registerLazySingleton(() => FirebaseDataSource());
 
-  // Repositories
+  // Inject the Repositories. Note that the type is the abstract class
+  // and the injected instance is the implementation.
   getIt.registerLazySingleton<AuthRepository>(() => AuthRepositoryImp());
   getIt.registerLazySingleton<MyUserRepository>(() => MyUserRepositoryImp());
 }

@@ -16,6 +16,7 @@ class HomeScreen extends StatelessWidget {
         actions: [
           IconButton(
             onPressed: () {
+              // Get the instance of AuthCubit and signOut
               final authCubit = context.read<AuthCubit>();
               authCubit.signOut();
             },
@@ -26,9 +27,12 @@ class HomeScreen extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.add),
         onPressed: () {
+          // Navigate to the editUser route without arguments
+          // to create a new myUser
           Navigator.pushNamed(context, Routes.editUser);
         },
       ),
+      // Use BlocProvider to pass the HomeCubit to the widget tree
       body: BlocProvider(
         create: (context) => HomeCubit()..init(),
         child: BlocBuilder<HomeCubit, HomeState>(
@@ -40,6 +44,8 @@ class HomeScreen extends StatelessWidget {
                 return Card(
                   child: ListTile(
                     onTap: () {
+                      // Navigate to the editUser route with arguments
+                      // to edit the tapped myUser
                       Navigator.pushNamed(context, Routes.editUser, arguments: myUser);
                     },
                     leading: SizedBox(

@@ -12,6 +12,7 @@ class EditMyUserScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // If userToEdit is not null it means we are editing
     final userToEdit = ModalRoute.of(context)?.settings.arguments as MyUser?;
 
     return BlocProvider(
@@ -21,6 +22,8 @@ class EditMyUserScreen extends StatelessWidget {
           title: const Text('Edit or create user'),
           actions: [
             Builder(builder: (context) {
+              // If we are creating a new myUser do not show the
+              // delete button
               return Visibility(
                 visible: userToEdit != null,
                 child: IconButton(
@@ -36,6 +39,7 @@ class EditMyUserScreen extends StatelessWidget {
         body: BlocConsumer<EditMyUserCubit, EditMyUserState>(
           listener: (context, state) {
             if (state.isDone) {
+              // When isDone is true we navigate to the previous screen/route
               Navigator.of(context).pop();
             }
           },
@@ -136,6 +140,8 @@ class _MyUserSectionState extends State<_MyUserSection> {
               decoration: const InputDecoration(labelText: 'Age'),
             ),
             const SizedBox(height: 8),
+
+            // When isSaving is true we disable the button
             ElevatedButton(
               onPressed: widget.isSaving
                   ? null

@@ -10,6 +10,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Listen for authentication state changes and
+    // navigate to the intro or home screens
     return BlocListener<AuthCubit, AuthState>(
       listener: (context, state) {
         if (state == AuthState.signedOut) {
