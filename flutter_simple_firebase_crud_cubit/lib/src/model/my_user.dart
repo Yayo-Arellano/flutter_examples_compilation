@@ -1,7 +1,7 @@
 import 'package:equatable/equatable.dart';
 
 // Extending Equatable will help us to compare two instances of
-// MyUser class and we will not have to override == and hashCode.
+// MyUser class, and we will not have to override == and hashCode.
 class MyUser extends Equatable {
   final String id;
   final String name;

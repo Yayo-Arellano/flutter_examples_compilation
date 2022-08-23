@@ -4,11 +4,9 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter_simple_firebase_crud_cubit/src/model/my_user.dart';
-import 'package:path/path.dart' as path;
 
 class FirebaseDataSource {
-
-  // Helper function to get current authenticated user.
+  // Helper function to get the currently authenticated user
   User get currentUser {
     final user = FirebaseAuth.instance.currentUser;
     if (user == null) throw Exception('Not authenticated exception');
@@ -17,6 +15,11 @@ class FirebaseDataSource {
 
   FirebaseFirestore get firestore => FirebaseFirestore.instance;
   FirebaseStorage get storage => FirebaseStorage.instance;
+
+  // Generates and returns a new firestore id
+  String newId() {
+    return firestore.collection('tmp').doc().id;
+  }
 
   // Read all documents from MyUser collection from the authenticated user
   Stream<Iterable<MyUser>> getMyUsers() {
@@ -31,12 +34,14 @@ class FirebaseDataSource {
   Future<void> saveMyUser(MyUser myUser, File? image) async {
     final ref = firestore.doc('user/${currentUser.uid}/myUsers/${myUser.id}');
     if (image != null) {
-
       // Delete current image if exists
       if (myUser.image != null) {
         await storage.refFromURL(myUser.image!).delete();
       }
-      final imagePath = '${currentUser.uid}/myUsersImages/${path.basename(image.path)}';
+
+      final fileName = image.uri.pathSegments.last;
+      final imagePath = '${currentUser.uid}/myUsersImages/$fileName';
+
       final storageRef = storage.ref(imagePath);
       await storageRef.putFile(image);
       final url = await storageRef.getDownloadURL();
@@ -57,4 +62,3 @@ class FirebaseDataSource {
     await ref.delete();
   }
 }
-

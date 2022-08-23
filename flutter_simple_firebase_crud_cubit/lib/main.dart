@@ -12,7 +12,7 @@ import 'package:get_it/get_it.dart';
 
 import 'firebase_options.dart';
 
-// Create a global instance of GetIt that can be user later to
+// Create a global instance of GetIt that can be used later to
 // retrieve our injected instances
 final getIt = GetIt.instance;
 

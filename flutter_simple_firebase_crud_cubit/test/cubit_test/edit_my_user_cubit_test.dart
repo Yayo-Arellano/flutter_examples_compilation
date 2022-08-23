@@ -22,9 +22,10 @@ void main() {
   });
 
   blocTest<EditMyUserCubit, EditMyUserState>(
-    'Saving a new user will success',
+    'Saving a new user will succeed',
     build: () {
       when(() => mockRepo.saveMyUser(any(), null)).thenAnswer((_) async {});
+      when(() => mockRepo.newId()).thenReturn('5555');
       return EditMyUserCubit(null);
     },
     act: (cubit) {
@@ -41,12 +42,14 @@ void main() {
       )
     ],
     verify: (cubit) {
-      verify(() => mockRepo.saveMyUser(any(), null)).called(1);
+      const newUser =
+          MyUser(id: '5555', name: 'Gerardo', lastName: 'Doe', age: 25);
+      verify(() => mockRepo.saveMyUser(newUser, null)).called(1);
     },
   );
 
   blocTest<EditMyUserCubit, EditMyUserState>(
-    'Updating a user will success',
+    'Updating a user will succeed',
     build: () {
       when(() => mockRepo.saveMyUser(any(), null)).thenAnswer((_) async {});
       return EditMyUserCubit(_myUser1);

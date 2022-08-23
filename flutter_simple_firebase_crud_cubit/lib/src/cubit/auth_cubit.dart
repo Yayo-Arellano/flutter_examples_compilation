@@ -21,8 +21,9 @@ class AuthCubit extends Cubit<AuthState> {
 
   Future<void> init() async {
     // Subscribe to listen for changes in the authentication state
-    await Future.delayed(Duration(seconds: 100));
-    _authSubscription = _authRepository.onAuthStateChanged.listen(_authStateChanged);
+    await Future.delayed(const Duration(seconds: 1));
+    _authSubscription =
+        _authRepository.onAuthStateChanged.listen(_authStateChanged);
   }
 
   // Helper function that will emit the current authentication state

@@ -40,10 +40,8 @@ class EditMyUserNotifier extends ChangeNotifier {
     isLoading = true;
     notifyListeners();
 
-    // If we are editing we use the existing id otherwise create a new one.
-    // Note that we are using the current time to generate the id, this is
-    // not a good practice but for this example is good enough
-    final uid = _toEdit?.id ?? DateTime.now().millisecondsSinceEpoch.toString();
+    // If we are editing, we use the existing id. Otherwise, create a new one.
+    final uid = _toEdit?.id ?? _userRepository.newId();
     _toEdit = MyUser(
         id: uid,
         name: name,

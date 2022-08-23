@@ -2,7 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutterfire_ui/auth.dart';
 import 'package:page_indicator/page_indicator.dart';
 
-const googleClientId = '925019682416-duvllfhr13hub3fs150uekm6kh483eu1.apps.googleusercontent.com';
+// Replace with your client id
+const googleClientId =
+    '925019682416-duvllfhr13hub3fs150uekm6kh483eu1.apps.googleusercontent.com';
+
+// Replace with your client id
+const facebookClientId = 'xxxxxx';
 
 class IntroScreen extends StatelessWidget {
   const IntroScreen({super.key});
@@ -19,7 +24,8 @@ class IntroScreen extends StatelessWidget {
 }
 
 class _IntroPager extends StatelessWidget {
-  final String exampleText = 'Lorem ipsum dolor sit amet, consecrated advising elit, '
+  final String exampleText =
+      'Lorem ipsum dolor sit amet, consecrated advising elit, '
       'sed do eiusmod tempor incididunt ut labore et '
       'dolore magna aliqua. Ut enim ad minim veniam.';
 
@@ -80,7 +86,8 @@ class _DescriptionPage extends StatelessWidget {
               child: Text(
                 text,
                 textAlign: TextAlign.center,
-                style: const TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
+                style: const TextStyle(
+                    fontSize: 24.0, fontWeight: FontWeight.bold),
               ),
             ),
           ),
@@ -96,7 +103,7 @@ class _LoginPage extends StatelessWidget {
     return const SignInScreen(
       providerConfigs: [
         GoogleProviderConfiguration(clientId: googleClientId),
-        FacebookProviderConfiguration(clientId: '...'),
+        FacebookProviderConfiguration(clientId: facebookClientId),
         EmailProviderConfiguration(),
       ],
     );

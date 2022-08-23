@@ -26,7 +26,11 @@ void main() async {
   // Inject dependencies
   await injectDependencies();
 
-  runApp(const MyApp());
+  runApp(
+    const ProviderScope(
+      child: MyApp(),
+    ),
+  );
 }
 
 // Helper function to inject dependencies

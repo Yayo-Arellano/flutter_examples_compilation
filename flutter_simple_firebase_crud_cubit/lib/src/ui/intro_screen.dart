@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutterfire_ui/auth.dart';
 import 'package:page_indicator/page_indicator.dart';
 
-// Replace with your own client id
+// Replace with your client id
 const googleClientId = '925019682416-duvllfhr13hub3fs150uekm6kh483eu1.apps.googleusercontent.com';
 
-// Replace with your own client id
+// Replace with your client id
 const facebookClientId = 'xxxxxx';
 
 class IntroScreen extends StatelessWidget {

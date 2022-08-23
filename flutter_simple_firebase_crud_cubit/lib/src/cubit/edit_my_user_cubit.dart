@@ -32,10 +32,8 @@ class EditMyUserCubit extends Cubit<EditMyUserState> {
   ) async {
     emit(state.copyWith(isLoading: true));
 
-    // If we are editing we use the existing id otherwise create a new one.
-    // Note: that we are using the current time to generate the id, this is
-    // not a good practice but for this example is good enough
-    final uid = _toEdit?.id ?? DateTime.now().millisecondsSinceEpoch.toString();
+    // If we are editing, we use the existing id. Otherwise, create a new one.
+    final uid = _toEdit?.id ?? _userRepository.newId();
     _toEdit = MyUser(
         id: uid,
         name: name,
@@ -58,15 +56,15 @@ class EditMyUserCubit extends Cubit<EditMyUserState> {
   }
 }
 
-// Class that will holds the state of this Cubit
+// Class that will hold the state of this Cubit
 // Extending Equatable will help us to compare if two instances
 // are the same without override == and hashCode
 class EditMyUserState extends Equatable {
   final File? pickedImage;
   final bool isLoading;
 
-  // In the presentation layer we will check the value of isDone.
-  // When is true we will navigate to the previous page
+  // In the presentation layer, we will check the value of isDone.
+  // When it is true, we will navigate to the previous page
   final bool isDone;
 
   const EditMyUserState({

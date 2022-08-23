@@ -10,6 +10,7 @@ import 'package:mocktail/mocktail.dart';
 const _myUser1 = MyUser(id: '111', name: 'Yayo', lastName: 'Arellano', age: 28);
 
 class _MockMyUser extends Mock implements MyUser {}
+
 class _MockMyUserRepo extends Mock implements MyUserRepository {}
 
 void main() {
@@ -38,6 +39,7 @@ void main() {
   testWidgets('Saving user will call repository successfully',
       (WidgetTester tester) async {
     when(() => mockRepo.saveMyUser(any(), null)).thenAnswer((_) async {});
+    when(() => mockRepo.newId()).thenReturn('5555');
 
     await tester.pumpWidget(getMaterialApp());
     await tester.pumpAndSettle();
@@ -50,7 +52,8 @@ void main() {
     await tester.tap(find.text('Save'));
     await tester.pump(const Duration(seconds: 3));
 
-    verify(() => mockRepo.saveMyUser(any(), null)).called(1);
+    const newUser = MyUser(id: '5555', name: 'Yayo', lastName: 'Are', age: 25);
+    verify(() => mockRepo.saveMyUser(newUser, null)).called(1);
   });
 
   testWidgets('Updating user will call repository successfully',

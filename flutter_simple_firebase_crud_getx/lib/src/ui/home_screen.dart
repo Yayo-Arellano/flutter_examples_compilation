@@ -39,7 +39,7 @@ class HomeScreen extends StatelessWidget {
             return Card(
               child: ListTile(
                 onTap: () {
-                  Get.to(Routes.editUser, arguments: myUser);
+                  Get.toNamed(Routes.editUser, arguments: myUser);
                 },
                 leading: SizedBox(
                   height: 45,

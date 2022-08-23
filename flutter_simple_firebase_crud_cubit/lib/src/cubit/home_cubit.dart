@@ -1,7 +1,7 @@
 import 'dart:async';
 
-import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_simple_firebase_crud_cubit/main.dart';
 import 'package:flutter_simple_firebase_crud_cubit/src/model/my_user.dart';
 import 'package:flutter_simple_firebase_crud_cubit/src/repository/my_user_repository.dart';
@@ -19,7 +19,7 @@ class HomeCubit extends Cubit<HomeState> {
     _myUsersSubscription = _userRepository.getMyUsers().listen(myUserListen);
   }
 
-  // Everytime the myUser list is updated this function will be called
+  // Every time the myUser list is updated, this function will be called
   // with the latest data
   void myUserListen(Iterable<MyUser> myUsers) async {
     emit(HomeState(
@@ -35,7 +35,7 @@ class HomeCubit extends Cubit<HomeState> {
   }
 }
 
-// Class that will holds the state of this Cubit
+// Class that will hold the state of this Cubit
 // Extending Equatable will help us to compare if two instances
 // are the same without override == and hashCode
 class HomeState extends Equatable {

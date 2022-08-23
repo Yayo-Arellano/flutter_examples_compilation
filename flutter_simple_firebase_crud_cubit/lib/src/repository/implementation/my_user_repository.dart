@@ -9,6 +9,11 @@ class MyUserRepositoryImp extends MyUserRepository {
   final FirebaseDataSource _fDataSource = getIt();
 
   @override
+  String newId() {
+    return _fDataSource.newId();
+  }
+
+  @override
   Stream<Iterable<MyUser>> getMyUsers() {
     return _fDataSource.getMyUsers();
   }
