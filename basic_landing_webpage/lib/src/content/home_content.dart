@@ -1,6 +1,6 @@
 import 'package:basic_landing_webpage/src/widgets/responsive_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 const googlePlayURL =
     'https://play.google.com/store/apps/details?id=com.google.android.youtube';
@@ -51,7 +51,7 @@ class DesktopHomeContent extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     GestureDetector(
-                      onTap: () => launch(googlePlayURL),
+                      onTap: () => launchUrlString(googlePlayURL),
                       child: Image.asset(
                         'assets/images/google_play_badge.png',
                         height: 60,
@@ -60,7 +60,7 @@ class DesktopHomeContent extends StatelessWidget {
                     ),
                     SizedBox(width: 24),
                     GestureDetector(
-                      onTap: () => launch(appStoreURL),
+                      onTap: () => launchUrlString(appStoreURL),
                       child: Image.asset(
                         'assets/images/app_store_badge.png',
                         height: 60,
@@ -96,7 +96,7 @@ class MobileHomeContent extends StatelessWidget {
           ),
           SizedBox(height: 24),
           GestureDetector(
-            onTap: () => launch(googlePlayURL),
+            onTap: () => launchUrlString(googlePlayURL),
             child: Image.asset(
               'assets/images/google_play_badge.png',
               height: 60,
@@ -105,7 +105,7 @@ class MobileHomeContent extends StatelessWidget {
           ),
           SizedBox(height: 24),
           GestureDetector(
-            onTap: () => launch(appStoreURL),
+            onTap: () => launchUrlString(appStoreURL),
             child: Image.asset(
               'assets/images/app_store_badge.png',
               height: 60,

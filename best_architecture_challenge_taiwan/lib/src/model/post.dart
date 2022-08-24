@@ -5,11 +5,11 @@ part 'post.g.dart';
 
 @JsonSerializable()
 class Post extends Equatable {
-  late final int id;
-  late final String title;
-  late final String body;
+  final int id;
+  final String title;
+  final String body;
 
-  Post(this.id, this.title, this.body);
+  const Post(this.id, this.title, this.body);
 
   @override
   List<Object?> get props => [id, title, body];

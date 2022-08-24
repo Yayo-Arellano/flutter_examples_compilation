@@ -3,13 +3,15 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_simple_firebase_auth/src/bloc/auth_cubit.dart';
 
 class EmailSignIn extends StatefulWidget {
-  static Widget create(BuildContext context) => EmailSignIn();
+  const EmailSignIn({Key? key}) : super(key: key);
+
+  static Widget create(BuildContext context) => const EmailSignIn();
 
   @override
-  _EmailSignInState createState() => _EmailSignInState();
+  EmailSignInState createState() => EmailSignInState();
 }
 
-class _EmailSignInState extends State<EmailSignIn> {
+class EmailSignInState extends State<EmailSignIn> {
   final _formKey = GlobalKey<FormState>();
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
@@ -21,35 +23,35 @@ class _EmailSignInState extends State<EmailSignIn> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: Text('Login with Email')),
+        appBar: AppBar(title: const Text('Login with Email')),
         body: BlocBuilder<AuthCubit, AuthState>(
           builder: (_, state) {
             return Form(
               key: _formKey,
               child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: 16),
+                padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    if (state is AuthSigningIn) Center(child: CircularProgressIndicator()),
+                    if (state is AuthSigningIn) const Center(child: CircularProgressIndicator()),
                     if (state is AuthError)
                       Text(
                         state.message,
-                        style: TextStyle(color: Colors.red, fontSize: 24),
+                        style: const TextStyle(color: Colors.red, fontSize: 24),
                       ),
-                    SizedBox(height: 8),
+                    const SizedBox(height: 8),
                     TextFormField(
                       controller: _emailController,
-                      decoration: InputDecoration(labelText: 'Email'),
+                      decoration: const InputDecoration(labelText: 'Email'),
                       validator: emptyValidator,
                     ),
-                    SizedBox(height: 8),
+                    const SizedBox(height: 8),
                     TextFormField(
                       controller: _passwordController,
-                      decoration: InputDecoration(labelText: 'Password'),
+                      decoration: const InputDecoration(labelText: 'Password'),
                       validator: emptyValidator,
                     ),
-                    SizedBox(height: 8),
+                    const SizedBox(height: 8),
                     Center(
                       child: ElevatedButton(
                         child: const Text('Login'),

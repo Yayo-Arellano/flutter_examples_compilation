@@ -13,8 +13,6 @@ class Routes {
   static const home = '/home';
 
   static Route routes(RouteSettings routeSettings) {
-    print('Route name: ${routeSettings.name}');
-
     switch (routeSettings.name) {
       case splash:
         return _buildRoute(SplashScreen.create);

@@ -1,19 +1,18 @@
 name: basic_landing_webpage
 description: Basic landing webpage
 publish_to: 'none'
-
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.16.2 <3.0.0"
+  sdk: ">=2.17.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
-  url_launcher: ^6.1.0
+  url_launcher: ^6.1.5
   url_strategy: ^0.2.0
-  hooks_riverpod: ^1.0.3
+  hooks_riverpod: ^1.0.4
 
 dev_dependencies:
   flutter_test:

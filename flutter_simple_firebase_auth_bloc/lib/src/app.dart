@@ -6,6 +6,8 @@ import 'package:flutter_simple_firebase_auth/src/navigation/routes.dart';
 final _navigatorKey = GlobalKey<NavigatorState>();
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   static Widget create() {
     return BlocListener<AuthCubit, AuthState>(
       listener: (context, state) {
@@ -15,7 +17,7 @@ class MyApp extends StatelessWidget {
           _navigatorKey.currentState?.pushNamedAndRemoveUntil(Routes.home, (r) => false);
         }
       },
-      child: MyApp(),
+      child: const MyApp(),
     );
   }
 

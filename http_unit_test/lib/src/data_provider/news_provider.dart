@@ -36,7 +36,6 @@ class NewsProvider {
     var uri = Uri.https(_baseUrl, endpoint, params);
 
     final response = await _httpClient.get(uri);
-    print(response.body);
     final result = ApiResponse.fromJson((json.decode(response.body)));
 
 

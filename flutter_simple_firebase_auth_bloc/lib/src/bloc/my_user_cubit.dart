@@ -21,7 +21,7 @@ class MyUserCubit extends Cubit<MyUserState> {
 
   Future<void> getMyUser() async {
     emit(MyUserLoadingState());
-    _user = (await _userRepository.getMyUser()) ?? MyUser('', '', '', 0);
+    _user = (await _userRepository.getMyUser()) ?? const MyUser('', '', '', 0);
     emit(MyUserReadyState(_user, _pickedImage));
   }
 
@@ -34,7 +34,7 @@ class MyUserCubit extends Cubit<MyUserState> {
     _user = MyUser(uid, name, lastName, age, image: _user.image);
     emit(MyUserReadyState(_user, _pickedImage, isSaving: true));
     // Just for testing we add a 3 seconds delay: This allows to see the loading in the home page
-    await Future.delayed(Duration(seconds: 3));
+    await Future.delayed(const Duration(seconds: 3));
     await _userRepository.saveMyUser(_user, _pickedImage);
     emit(MyUserReadyState(_user, _pickedImage));
   }
@@ -50,7 +50,7 @@ class MyUserLoadingState extends MyUserState {}
 class MyUserReadyState extends MyUserState {
   final MyUser user;
   final File? pickedImage;
-  final isSaving;
+  final bool isSaving;
 
   MyUserReadyState(this.user, this.pickedImage, {this.isSaving = false});
 

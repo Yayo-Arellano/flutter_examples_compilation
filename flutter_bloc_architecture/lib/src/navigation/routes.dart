@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc_architecture/src/ui/news_detail_screen.dart';
 import 'package:flutter_bloc_architecture/src/ui/news_screen.dart';
@@ -13,9 +12,11 @@ class Routes {
 
     switch (settings.name) {
       case topNews:
-        return MaterialPageRoute(builder: (context) => NewsScreen.create(context));
+        return MaterialPageRoute(
+            builder: (context) => NewsScreen.create(context));
       case newsDetails:
-        return MaterialPageRoute(builder: (_) => NewsDetailScreen.create(args!));
+        return MaterialPageRoute(
+            builder: (_) => NewsDetailScreen.create(args!));
     }
     throw Exception('This route does not exists');
   }

@@ -2,7 +2,6 @@ import 'package:best_architecture_challenge/src/bloc/post_cubit.dart';
 import 'package:best_architecture_challenge/src/model/post.dart';
 import 'package:best_architecture_challenge/src/provider/rest_provider.dart';
 import 'package:best_architecture_challenge/src/repository/repository.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -15,12 +14,14 @@ void main() {
   runApp(
     BlocProvider<PostCubit>(
       create: (_) => postCubit,
-      child: MyApp(),
+      child: const MyApp(),
     ),
   );
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
       ),
-      home: PostPage(title: 'FlutterTaipei :)'),
+      home: const PostPage(title: 'FlutterTaipei :)'),
     );
   }
 }
@@ -45,15 +46,15 @@ class PostPage extends StatelessWidget {
         title: Text(title),
         actions: <Widget>[
           PopupMenuButton<SortOptions>(
-            icon: Icon(Icons.more_vert),
+            icon: const Icon(Icons.more_vert),
             itemBuilder: (context) => [
-              PopupMenuItem(
-                child: Text('使用id排序'),
+              const PopupMenuItem(
                 value: SortOptions.id,
+                child: Text('使用id排序'),
               ),
-              PopupMenuItem(
-                child: Text('使用title排序'),
+              const PopupMenuItem(
                 value: SortOptions.title,
+                child: Text('使用title排序'),
               ),
             ],
             onSelected: context.read<PostCubit>().sort,
@@ -69,7 +70,7 @@ class PostPage extends StatelessWidget {
               itemBuilder: (context, index) {
                 Post item = state.postList[index];
                 return Container(
-                    padding: EdgeInsets.all(8),
+                    padding: const EdgeInsets.all(8),
                     child: RichText(
                       key: Key(item.id.toString()),
                       text: TextSpan(
@@ -77,11 +78,12 @@ class PostPage extends StatelessWidget {
                         children: <TextSpan>[
                           TextSpan(
                             text: "${item.id}. ${item.title}",
-                            style: TextStyle(fontSize: 18, color: Colors.red),
+                            style: const TextStyle(
+                                fontSize: 18, color: Colors.red),
                           ),
                           TextSpan(
                             text: '\n ${item.body}',
-                            style: TextStyle(fontWeight: FontWeight.bold),
+                            style: const TextStyle(fontWeight: FontWeight.bold),
                           ),
                         ],
                       ),
@@ -89,7 +91,7 @@ class PostPage extends StatelessWidget {
               },
             );
           }
-          return Center(child: CircularProgressIndicator());
+          return const Center(child: CircularProgressIndicator());
         },
       ),
     );

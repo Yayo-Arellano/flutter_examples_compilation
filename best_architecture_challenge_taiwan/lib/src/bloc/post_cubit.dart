@@ -5,7 +5,7 @@ import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class PostCubit extends Cubit<PostState> {
-  Repository _repository;
+  final Repository _repository;
   SortOptions _sortBy = SortOptions.id;
 
   List<Post> postList = [];

@@ -8,8 +8,8 @@ import 'package:flutter_test/flutter_test.dart';
 class MockRepoImp extends Repository {
   @override
   Future<List<Post>> getPostList() async => [
-        Post(1, 'Yayo title', 'This is the body'),
-        Post(2, 'Jonh title', 'This is the body 2'),
+        const Post(1, 'Yayo title', 'This is the body'),
+        const Post(2, 'Jonh title', 'This is the body 2'),
       ];
 }
 

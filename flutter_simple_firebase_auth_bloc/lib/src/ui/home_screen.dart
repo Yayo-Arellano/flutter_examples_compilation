@@ -10,10 +10,12 @@ import 'package:flutter_simple_firebase_auth/src/repository/implementations/my_u
 import 'package:image_picker/image_picker.dart';
 
 class HomeScreen extends StatelessWidget {
+  const HomeScreen({Key? key}) : super(key: key);
+
   static Widget create(BuildContext context) {
     return BlocProvider(
       create: (_) => MyUserCubit(MyUserRepository())..getMyUser(),
-      child: HomeScreen(),
+      child: const HomeScreen(),
     );
   }
 
@@ -21,7 +23,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home Page'),
+        title: const Text('Home Page'),
         actions: [
           IconButton(
             icon: const Icon(Icons.logout),
@@ -39,7 +41,7 @@ class HomeScreen extends StatelessWidget {
               isSaving: state.isSaving,
             );
           }
-          return Center(child: CircularProgressIndicator());
+          return const Center(child: CircularProgressIndicator());
         },
       ),
     );
@@ -87,28 +89,30 @@ class _MyUserSectionState extends State<_MyUserSection> {
     } else if (widget.user?.image != null && widget.user!.image!.isNotEmpty) {
       image = CachedNetworkImage(
         imageUrl: widget.user!.image!,
-        progressIndicatorBuilder: (_, __, progress) => CircularProgressIndicator(value: progress.progress),
-        errorWidget: (_, __, ___) => Icon(Icons.error),
+        progressIndicatorBuilder: (_, __, progress) =>
+            CircularProgressIndicator(value: progress.progress),
+        errorWidget: (_, __, ___) => const Icon(Icons.error),
         fit: BoxFit.fill,
       );
     }
 
     return SingleChildScrollView(
       child: Container(
-        padding: EdgeInsets.all(16),
+        padding: const EdgeInsets.all(16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             GestureDetector(
               onTap: () async {
-                final pickedImage = await picker.getImage(source: ImageSource.gallery);
+                final myUserCubit = context.read<MyUserCubit>();
+                final pickedImage = await picker.pickImage(source: ImageSource.gallery);
                 if (pickedImage != null) {
-                  context.read<MyUserCubit>().setImage(File(pickedImage.path));
+                  myUserCubit.setImage(File(pickedImage.path));
                 }
               },
               child: Center(
                 child: ClipOval(
-                  child: Container(
+                  child: SizedBox(
                     width: 150,
                     height: 150,
                     child: image,
@@ -116,7 +120,7 @@ class _MyUserSectionState extends State<_MyUserSection> {
                 ),
               ),
             ),
-            SizedBox(height: 8),
+            const SizedBox(height: 8),
             BlocBuilder<AuthCubit, AuthState>(
               buildWhen: (_, current) => current is AuthSignedIn,
               builder: (_, state) {
@@ -127,25 +131,24 @@ class _MyUserSectionState extends State<_MyUserSection> {
             ),
             TextField(
               controller: _nameController,
-              decoration: InputDecoration(labelText: 'Name'),
+              decoration: const InputDecoration(labelText: 'Name'),
             ),
-            SizedBox(height: 8),
+            const SizedBox(height: 8),
             TextField(
               controller: _lastNameController,
-              decoration: InputDecoration(labelText: 'Last Name'),
+              decoration: const InputDecoration(labelText: 'Last Name'),
             ),
-            SizedBox(height: 8),
+            const SizedBox(height: 8),
             TextField(
               controller: _ageController,
               keyboardType: TextInputType.number,
-              decoration: InputDecoration(labelText: 'Age'),
+              decoration: const InputDecoration(labelText: 'Age'),
             ),
-            SizedBox(height: 8),
+            const SizedBox(height: 8),
             Stack(
               alignment: Alignment.center,
               children: [
                 ElevatedButton(
-                  child: const Text('Save'),
                   onPressed: widget.isSaving
                       ? null
                       : () {
@@ -159,8 +162,9 @@ class _MyUserSectionState extends State<_MyUserSection> {
                                 int.tryParse(_ageController.text) ?? 0,
                               );
                         },
+                  child: const Text('Save'),
                 ),
-                if (widget.isSaving) CircularProgressIndicator(),
+                if (widget.isSaving) const CircularProgressIndicator(),
               ],
             ),
           ],

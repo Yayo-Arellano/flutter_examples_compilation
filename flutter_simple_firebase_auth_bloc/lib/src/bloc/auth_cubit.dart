@@ -12,7 +12,7 @@ class AuthCubit extends Cubit<AuthState> {
 
   Future<void> init() async {
     // Just for testing. Allows the splash screen to be shown a few seconds
-    await Future.delayed(Duration(seconds: 3));
+    await Future.delayed(const Duration(seconds: 3));
     _authSubscription = _authRepository.onAuthStateChanged.listen(_authStateChanged);
   }
 
@@ -42,7 +42,6 @@ class AuthCubit extends Cubit<AuthState> {
         emit(AuthSignedIn(user));
       }
     } catch (e) {
-      print('Catched error by yayo $e');
       emit(AuthError("Error ${e.toString()}"));
     }
   }

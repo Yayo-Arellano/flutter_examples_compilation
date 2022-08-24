@@ -1,6 +1,5 @@
 import 'package:basic_landing_webpage/src/widgets/responsive_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 
 class ScreenshotsContent extends ResponsiveWidget {
   const ScreenshotsContent({Key? key}) : super(key: key);

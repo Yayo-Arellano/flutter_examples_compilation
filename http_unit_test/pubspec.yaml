@@ -1,27 +1,25 @@
 name: http_unit_test
 description: A new Flutter project.
+publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.16.0 <3.0.0"
+  sdk: ">=2.17.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
-  # https://pub.dev/packages/http
-  http: ^0.13.4
-  # https://pub.dev/packages/cached_network_image
-  cached_network_image: ^3.2.0
+  http: ^0.13.5
+  cached_network_image: ^3.2.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  # https://pub.dev/packages/build_runner
-  build_runner: ^2.1.10
-  # https://pub.dev/packages/json_serializable
-  json_serializable: ^6.1.6
+  flutter_lints: ^2.0.1
+  build_runner: ^2.2.0
+  json_serializable: ^6.3.1
 
 
 flutter:

@@ -20,7 +20,7 @@ void main() {
     await tester.pumpWidget(
       BlocProvider<PostCubit>(
         create: (context) => PostCubit(MockRepoImp()),
-        child: MaterialApp(
+        child: const MaterialApp(
           home: PostPage(title: 'FlutterTaipei :) Test'),
         ),
       ),
@@ -28,7 +28,7 @@ void main() {
 
     await tester.pumpAndSettle();
 
-    expect(find.byKey(Key('1')), findsOneWidget);
-    expect(find.byKey(Key('2')), findsOneWidget);
+    expect(find.byKey(const Key('1')), findsOneWidget);
+    expect(find.byKey(const Key('2')), findsOneWidget);
   });
 }

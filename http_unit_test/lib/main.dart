@@ -38,25 +38,25 @@ class TopNews extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Top News'),
+        title: const Text('Top News'),
       ),
       body: FutureBuilder<List<Article>>(
         future: newsProvider.topHeadlines('tw'),
         builder: (context, snapshot) {
           if (snapshot.hasError) {
             if (snapshot.error is MissingApiKeyException) {
-              return Center(child: Text('Api key is missing'));
+              return const Center(child: Text('Api key is missing'));
             } else if (snapshot.error is ApiKeyInvalidException) {
-              return Center(child: Text('Api key is not valid'));
+              return const Center(child: Text('Api key is not valid'));
             }
-            return Center(child: Text('Unknown error'));
+            return const Center(child: Text('Unknown error'));
           } else if (snapshot.hasData) {
             return ListView.builder(
               itemCount: snapshot.data!.length,
               itemBuilder: (_, int index) => _ListItem(article: snapshot.data![index]),
             );
           }
-          return Center(child: CircularProgressIndicator());
+          return const Center(child: CircularProgressIndicator());
         },
       ),
     );
@@ -74,24 +74,24 @@ class _ListItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      margin: EdgeInsets.all(8),
+      margin: const EdgeInsets.all(8),
       child: Column(
         children: [
           article.urlToImage == null
               ? Container(color: Colors.red, height: 250)
               : CachedNetworkImage(
                   imageUrl: article.urlToImage!,
-                  placeholder: (context, url) => CircularProgressIndicator(),
-                  errorWidget: (context, url, error) => Icon(Icons.error),
+                  placeholder: (context, url) => const CircularProgressIndicator(),
+                  errorWidget: (context, url, error) => const Icon(Icons.error),
                 ),
           Text(
             '${article.title}',
             maxLines: 1,
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+            style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
           ),
-          SizedBox(height: 8),
+          const SizedBox(height: 8),
           Text('${article.description}', maxLines: 3),
-          SizedBox(height: 16),
+          const SizedBox(height: 16),
         ],
       ),
     );

@@ -6,7 +6,9 @@ import 'package:flutter_simple_firebase_auth/src/navigation/routes.dart';
 import 'package:page_indicator/page_indicator.dart';
 
 class IntroScreen extends StatelessWidget {
-  static Widget create(BuildContext context) => IntroScreen();
+  const IntroScreen({Key? key}) : super(key: key);
+
+  static Widget create(BuildContext context) => const IntroScreen();
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +32,13 @@ class _IntroPager extends HookWidget {
     return AbsorbPointer(
       absorbing: isSigningIn,
       child: PageIndicatorContainer(
+        align: IndicatorAlign.bottom,
+        length: 4,
+        indicatorSpace: 12,
+        indicatorColor: Colors.grey,
+        indicatorSelectorColor: Colors.black,
         child: PageView(
+          controller: usePageController(),
           children: <Widget>[
             _DescriptionPage(
               text: exampleText,
@@ -46,13 +54,7 @@ class _IntroPager extends HookWidget {
             ),
             _LoginPage(),
           ],
-          controller: usePageController(),
         ),
-        align: IndicatorAlign.bottom,
-        length: 4,
-        indicatorSpace: 12,
-        indicatorColor: Colors.grey,
-        indicatorSelectorColor: Colors.black,
       ),
     );
   }
@@ -115,19 +117,19 @@ class _LoginPage extends StatelessWidget {
           Expanded(
             child: Container(
               alignment: Alignment.center,
-              child: Text(
+              child: const Text(
                 'Sign in or create an account',
                 textAlign: TextAlign.center,
-                style: const TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
               ),
             ),
           ),
-          if (isSigningIn) CircularProgressIndicator(),
+          if (isSigningIn) const CircularProgressIndicator(),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 50.0),
             child: Column(
               children: [
-                SizedBox(height: 8),
+                const SizedBox(height: 8),
                 _LoginButton(
                   text: 'Sign in with Google',
                   imagePath: 'assets/icon_google.png',
@@ -135,14 +137,14 @@ class _LoginPage extends StatelessWidget {
                   textColor: Colors.grey,
                   onTap: () => authCubit.signInWithGoogle(),
                 ),
-                SizedBox(height: 8),
+                const SizedBox(height: 8),
                 _LoginButton(
                   text: 'Sign in with Facebook',
                   imagePath: 'assets/icon_facebook.png',
                   color: Colors.blueAccent,
                   onTap: () => authCubit.signInWithFacebook(),
                 ),
-                SizedBox(height: 8),
+                const SizedBox(height: 8),
                 _LoginButton(
                   text: 'Sign in with Email',
                   imagePath: 'assets/icon_email.png',
@@ -153,7 +155,7 @@ class _LoginPage extends StatelessWidget {
                     Navigator.pushNamed(context, Routes.signInEmail);
                   },
                 ),
-                SizedBox(height: 8),
+                const SizedBox(height: 8),
                 _LoginButton(
                   text: 'Sign in Anonymously',
                   imagePath: 'assets/icon_question.png',
@@ -161,15 +163,15 @@ class _LoginPage extends StatelessWidget {
                   textColor: Colors.white,
                   onTap: () => authCubit.signInAnonymously(),
                 ),
-                SizedBox(height: 48),
+                const SizedBox(height: 48),
                 OutlinedButton(
-                  child: Text('Create account'),
+                  child: const Text('Create account'),
                   onPressed: () {
                     authCubit.reset();
                     Navigator.pushNamed(context, Routes.createAccount);
                   },
                 ),
-                SizedBox(height: 48),
+                const SizedBox(height: 48),
               ],
             ),
           )
@@ -200,11 +202,11 @@ class _LoginButton extends StatelessWidget {
     return Material(
       color: color,
       elevation: 3,
-      borderRadius: BorderRadius.all(Radius.circular(5)),
+      borderRadius: const BorderRadius.all(Radius.circular(5)),
       child: InkWell(
         onTap: onTap,
         child: Container(
-          padding: EdgeInsets.all(8),
+          padding: const EdgeInsets.all(8),
           child: Row(
             children: [
               Image.asset(
@@ -212,7 +214,7 @@ class _LoginButton extends StatelessWidget {
                 width: 24,
                 height: 24,
               ),
-              SizedBox(width: 10),
+              const SizedBox(width: 10),
               Text(
                 text,
                 style: TextStyle(

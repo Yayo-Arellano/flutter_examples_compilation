@@ -8,7 +8,7 @@ class MyUser extends Equatable {
 
   final String? image;
 
-  MyUser(this.id, this.name, this.lastName, this.age, {this.image});
+  const MyUser(this.id, this.name, this.lastName, this.age, {this.image});
 
   @override
   List<Object?> get props => [id];
