@@ -21,17 +21,19 @@ This is a compilation of Flutter projects that I used for my tutorials on my [Yo
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Get the source code][8]<br/>- [Firebase Authentication][5004]<br/>- Online & Offline Database [Firebase Firestore][5006]<br/>- Store files on [Firebase Storage][5005]<br/>                                                                                             | <img src="flutter_simple_firebase_auth_getx/screenshots/image1.png" height="300">  <img src="flutter_simple_firebase_auth_getx/screenshots/image2.png" height="300"> <img src="flutter_simple_firebase_auth_getx/screenshots/image3.png" height="300"> |
 | [Get the source code][9]<br/>- CRUD with Firebase<br/>- Dependency Injection with [GetIt][5008]<br/>- Login with [FlutterFire UI][5007]<br/>- Online & Offline Database [Firebase Firestore][5006]<br/>- Store files on [Firebase Storage][5005]<br/>- Widget tests<br/> | <img src="flutter_simple_firebase_crud_getx/screenshots/image1.png" height="300">  <img src="flutter_simple_firebase_crud_getx/screenshots/image2.png" height="300"> <img src="flutter_simple_firebase_crud_getx/screenshots/image3.png" height="300"> |
-| [Get the source code][6]<br/>- Dependency Injection with [GetX][5009]<br/>- Rest API using [http][5000]<br/>- Local Database with [Sqflite][5002]<br/>- GetX controller tests<br/>- Widget tests<br/>- [http][5000] request test                                         | <img src="flutter_simple_rest_api_getx/screenshots/youtube.png" height="250">                                                                                                                                                                          |
+| [Get the source code][10]<br/>- Dependency Injection with [GetX][5009]<br/>- Rest API using [http][5000]<br/>- Local Database with [Sqflite][5002]<br/>- GetX controller tests<br/>- Widget tests<br/>- [http][5000] request test                                        | [<img src="flutter_simple_rest_api_getx/screenshots/youtube.png" height="250">][3010]                                                                                                                                                                  |
 
 
 ## Tips
 
-|                                                                                                   |                                                                                     |
-|---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| [Get the source code][11]<br/>Google Chrome extension with Flutter                                | <img src="flutter_chrome_extension/screenshots/youtube.png" height="250">           |
-| [Get the source code][12]<br/>Show your users when they<br/> do not have internet connection<br/> | <img src="flutter_connectivity_plus_tutorial/screenshots/youtube.png" height="250"> |
-| [Get the source code][13]<br/>Internationalization your Flutter app<br/>in a few easy steps<br/>  | <img src="flutter_easy_localization_tutorial/screenshots/youtube.png" height="250"> |
-| [Get the source code][14]<br/>Learn Flutter Hooks and remove repetitive code<br/>                 | <img src="flutter_hooks_tutorial/screenshots/youtube.png" height="250">             |
+|                                                                                                   |                                                                                             |
+|---------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+| [Get the source code][11]<br/>Google Chrome extension with Flutter                                | [<img src="flutter_chrome_extension/screenshots/youtube.png" height="250">][3011]           |
+| [Get the source code][12]<br/>Show your users when they<br/> do not have internet connection<br/> | [<img src="flutter_connectivity_plus_tutorial/screenshots/youtube.png" height="250">][3012] |
+| [Get the source code][13]<br/>Internationalization your Flutter app<br/>in a few easy steps<br/>  | [<img src="flutter_easy_localization_tutorial/screenshots/youtube.png" height="250">][3013] |
+| [Get the source code][14]<br/>Learn Flutter Hooks and remove repetitive code<br/>                 | [<img src="flutter_hooks_tutorial/screenshots/youtube.png" height="250">][3014]             |
+
+
 
 
 [1]: <https://github.com/Yayo-Arellano/flutter_examples_compilation/tree/main/best_architecture_challenge_taiwan> 'best_architecture_challenge_taiwan'
@@ -49,6 +51,16 @@ This is a compilation of Flutter projects that I used for my tutorials on my [Yo
 [13]: <https://github.com/Yayo-Arellano/flutter_examples_compilation/tree/main/flutter_easy_localization_tutorial> 'flutter_easy_localization_tutorial'
 [14]: <https://github.com/Yayo-Arellano/flutter_examples_compilation/tree/main/flutter_hooks_tutorial> 'flutter_hooks_tutorial'
 
+
+<!--- 
+The links must match the number of the project. Por example [11] is flutter_chrome_extension
+so here is [3011] as you can see the last 2 digits match
+-->
+[3010]: <https://youtu.be/cxYq7hmThw8> 'flutter_simple_rest_api_getx'
+[3011]: <https://youtu.be/7U5423IARvU> 'flutter_chrome_extension'
+[3012]: <https://youtu.be/8QW39PYRDvQ> 'flutter_connectivity_plus_tutorial'
+[3013]: <https://youtu.be/XAptuhecO6I> 'flutter_easy_localization_tutorial'
+[3014]: <https://youtu.be/WYXLNNSqjqs> 'flutter_hooks_tutorial'
 
 
 [5000]: <https://pub.dev/packages/http> 'Package: http'
