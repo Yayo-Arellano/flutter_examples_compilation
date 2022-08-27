@@ -28,7 +28,7 @@ Flutter Version: Stable 2.10.5
 
 # Screenshots
 
-| Converter Screen                      | Favorites Screen                      | Settings Screen                       |
-|---------------------------------------|---------------------------------------|---------------------------------------|
-| ![Image 1](screenshots/Image%201.png) | ![Image 2](screenshots/Image%202.png) | ![Image 3](screenshots/Image%203.png) |
+| Converter Screen                   | Favorites Screen                   | Settings Screen                    |
+|------------------------------------|------------------------------------|------------------------------------|
+| ![Image 1](screenshots/image1.png) | ![Image 2](screenshots/image2.png) | ![Image 3](screenshots/image3.png) |
 

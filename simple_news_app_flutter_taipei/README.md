@@ -34,9 +34,9 @@ We separate in three layer:
 
 # Screenshots
 
-| Success Response | Handle ApiKey Invalid |
-| ---------------- | --------------------- |
-| ![Image 1](screenshots/image%201.png) |![Image 2](screenshots/image%202.png) |
+| Success Response                   | Handle ApiKey Invalid              |
+|------------------------------------|------------------------------------|
+| ![Image 1](screenshots/image1.png) | ![Image 2](screenshots/image2.png) |
 
 # Youtube Video (English)
 
