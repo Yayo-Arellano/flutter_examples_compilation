@@ -26,8 +26,12 @@ This is a compilation of Flutter projects that I used for my tutorials on my [Yo
 
 ## Tips
 
-
-
+|                                                                                                   |                                                                                     |
+|---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
+| [Get the source code][11]<br/>Google Chrome extension with Flutter                                | <img src="flutter_chrome_extension/screenshots/youtube.png" height="250">           |
+| [Get the source code][12]<br/>Show your users when they<br/> do not have internet connection<br/> | <img src="flutter_connectivity_plus_tutorial/screenshots/youtube.png" height="250"> |
+| [Get the source code][13]<br/>Internationalization your Flutter app<br/>in a few easy steps<br/>  | <img src="flutter_easy_localization_tutorial/screenshots/youtube.png" height="250"> |
+| [Get the source code][14]<br/>Learn Flutter Hooks and remove repetitive code<br/>                 | <img src="flutter_hooks_tutorial/screenshots/youtube.png" height="250">             |
 
 
 [1]: <https://github.com/Yayo-Arellano/flutter_examples_compilation/tree/main/best_architecture_challenge_taiwan> 'best_architecture_challenge_taiwan'
@@ -40,6 +44,10 @@ This is a compilation of Flutter projects that I used for my tutorials on my [Yo
 [8]: <https://github.com/Yayo-Arellano/flutter_examples_compilation/tree/main/flutter_simple_firebase_auth_getx> 'flutter_simple_firebase_auth_getx'
 [9]: <https://github.com/Yayo-Arellano/flutter_examples_compilation/tree/main/flutter_simple_firebase_crud_getx> 'flutter_simple_firebase_crud_getx'
 [10]: <https://github.com/Yayo-Arellano/flutter_examples_compilation/tree/main/flutter_simple_rest_api_getx> 'flutter_simple_rest_api_getx'
+[11]: <https://github.com/Yayo-Arellano/flutter_examples_compilation/tree/main/flutter_chrome_extension> 'flutter_chrome_extension'
+[12]: <https://github.com/Yayo-Arellano/flutter_examples_compilation/tree/main/flutter_connectivity_plus_tutorial> 'flutter_connectivity_plus_tutorial'
+[13]: <https://github.com/Yayo-Arellano/flutter_examples_compilation/tree/main/flutter_easy_localization_tutorial> 'flutter_easy_localization_tutorial'
+[14]: <https://github.com/Yayo-Arellano/flutter_examples_compilation/tree/main/flutter_hooks_tutorial> 'flutter_hooks_tutorial'
 
 
 
