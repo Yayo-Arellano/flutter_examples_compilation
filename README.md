@@ -3,7 +3,7 @@
 This is a compilation of Flutter projects that I used for my tutorials on my [YouTube channel](https://www.youtube.com/channel/UC9WSk7SkAXLJkT6NLg1p2cA) or my [Blog](https://www.yayocode.com/).
 
 ## State Management
-### [Cubit](https://pub.dev/packages/flutter_bloc)
+### [Cubit][5010]
 
 |                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                                                           |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -15,7 +15,17 @@ This is a compilation of Flutter projects that I used for my tutorials on my [Yo
 | [Get the source code][6]<br/>- Dependency Injection with [GetIt][5008]<br/>- Rest API using [http][5000]<br/>- Local Database with [Sqflite][5002]<br/>- Cubit tests<br/>- Widget Test<br/>- [http][5000] request test                                                  | <img src="flutter_simple_rest_api_getx_migrate_flutter_bloc/screenshots/youtube.png" height="250">                                                                                                                                                        |
 | [Get the source code][7]<br/>- Dependency Injection with [GetIt][5008]<br/>- Rest API using [http][5000]<br/>- Cubit tests<br/>- Widget Test<br/>- [http][5000] request test                                                                                            | <img src="simple_news_app_flutter_taipei/screenshots/image1.png" height="300">  <img src="simple_news_app_flutter_taipei/screenshots/image2.png" height="300">                                                                                            |
 
-### [GetX](https://pub.dev/packages/get)
+### [GetX][5009]
+
+|                                                                                                                                                                                                                                                                          |                                                                                                                                                                                                                                                        |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Get the source code][8]<br/>- [Firebase Authentication][5004]<br/>- Online & Offline Database [Firebase Firestore][5006]<br/>- Store files on [Firebase Storage][5005]<br/>                                                                                             | <img src="flutter_simple_firebase_auth_getx/screenshots/image1.png" height="300">  <img src="flutter_simple_firebase_auth_getx/screenshots/image2.png" height="300"> <img src="flutter_simple_firebase_auth_getx/screenshots/image3.png" height="300"> |
+| [Get the source code][9]<br/>- CRUD with Firebase<br/>- Dependency Injection with [GetIt][5008]<br/>- Login with [FlutterFire UI][5007]<br/>- Online & Offline Database [Firebase Firestore][5006]<br/>- Store files on [Firebase Storage][5005]<br/>- Widget tests<br/> | <img src="flutter_simple_firebase_crud_getx/screenshots/image1.png" height="300">  <img src="flutter_simple_firebase_crud_getx/screenshots/image2.png" height="300"> <img src="flutter_simple_firebase_crud_getx/screenshots/image3.png" height="300"> |
+| [Get the source code][6]<br/>- Dependency Injection with [GetX][5009]<br/>- Rest API using [http][5000]<br/>- Local Database with [Sqflite][5002]<br/>- GetX controller tests<br/>- Widget tests<br/>- [http][5000] request test                                         | <img src="flutter_simple_rest_api_getx/screenshots/youtube.png" height="250">                                                                                                                                                                          |
+
+
+## Tips
+
 
 
 
@@ -27,6 +37,9 @@ This is a compilation of Flutter projects that I used for my tutorials on my [Yo
 [5]: <https://github.com/Yayo-Arellano/flutter_examples_compilation/tree/main/flutter_simple_firebase_crud_cubit> 'flutter_simple_firebase_crud_cubit'
 [6]: <https://github.com/Yayo-Arellano/flutter_examples_compilation/tree/main/flutter_simple_rest_api_getx_migrate_flutter_bloc> 'flutter_simple_rest_api_getx_migrate_flutter_bloc'
 [7]: <https://github.com/Yayo-Arellano/flutter_examples_compilation/tree/main/simple_news_app_flutter_taipei> 'simple_news_app_flutter_taipei'
+[8]: <https://github.com/Yayo-Arellano/flutter_examples_compilation/tree/main/flutter_simple_firebase_auth_getx> 'flutter_simple_firebase_auth_getx'
+[9]: <https://github.com/Yayo-Arellano/flutter_examples_compilation/tree/main/flutter_simple_firebase_crud_getx> 'flutter_simple_firebase_crud_getx'
+[10]: <https://github.com/Yayo-Arellano/flutter_examples_compilation/tree/main/flutter_simple_rest_api_getx> 'flutter_simple_rest_api_getx'
 
 
 
@@ -39,3 +52,5 @@ This is a compilation of Flutter projects that I used for my tutorials on my [Yo
 [5006]: <https://pub.dev/packages/cloud_firestore> 'Package: cloud_firestore'
 [5007]: <https://pub.dev/packages/flutterfire_ui> 'Package: flutterfire_ui'
 [5008]: <https://pub.dev/packages/get_it> 'Package: get_it'
+[5009]: <https://pub.dev/packages/get> 'Package: get'
+[5010]: <https://pub.dev/packages/flutter_bloc> 'Package: flutter_bloc'
