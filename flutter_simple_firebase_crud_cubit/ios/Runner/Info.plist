@@ -28,6 +28,19 @@
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
+	<key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+    	    <key>CFBundleTypeRole</key>
+    		<string>Editor</string>
+    		<key>CFBundleURLSchemes</key>
+    		<array>
+    			<string>com.googleusercontent.apps.925019682416-2s33mbmpcaj9old3dk56cgrt8o8qb973</string>
+    		</array>
+    	</dict>
+    </array>
+	<key>NSPhotoLibraryUsageDescription</key>
+    <string>We require access to your photo library</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

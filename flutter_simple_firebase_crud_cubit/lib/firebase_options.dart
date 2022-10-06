@@ -45,7 +45,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions web = FirebaseOptions(
     apiKey: 'AIzaSyCoLHsnqrIOUbDKaq4DWpbkloknBijhC8Q',
-    appId: '1:925019682416:web:fac00f89573db3f11426b5',
+    appId: '1:925019682416:web:e73b03cce1e8e1fd1426b5',
     messagingSenderId: '925019682416',
     projectId: 'address-book-prod',
     authDomain: 'address-book-prod.firebaseapp.com',
@@ -69,6 +69,7 @@ class DefaultFirebaseOptions {
     projectId: 'address-book-prod',
     databaseURL: 'https://address-book-prod.firebaseio.com',
     storageBucket: 'address-book-prod.appspot.com',
+    androidClientId: '925019682416-u7n63ba76vtdas0fbu81rebja3jmjvoe.apps.googleusercontent.com',
     iosClientId: '925019682416-2s33mbmpcaj9old3dk56cgrt8o8qb973.apps.googleusercontent.com',
     iosBundleId: 'com.nopalsoft.flutterSimpleFirebaseCrudCubit',
   );
@@ -80,6 +81,7 @@ class DefaultFirebaseOptions {
     projectId: 'address-book-prod',
     databaseURL: 'https://address-book-prod.firebaseio.com',
     storageBucket: 'address-book-prod.appspot.com',
+    androidClientId: '925019682416-u7n63ba76vtdas0fbu81rebja3jmjvoe.apps.googleusercontent.com',
     iosClientId: '925019682416-2s33mbmpcaj9old3dk56cgrt8o8qb973.apps.googleusercontent.com',
     iosBundleId: 'com.nopalsoft.flutterSimpleFirebaseCrudCubit',
   );

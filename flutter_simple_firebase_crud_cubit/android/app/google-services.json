@@ -51,6 +51,86 @@
       },
       "oauth_client": [
         {
+          "client_id": "925019682416-u7n63ba76vtdas0fbu81rebja3jmjvoe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nopalsoft.flutter_simple_firebase_crud_cubit",
+            "certificate_hash": "7d1b2d4575ba92ae7182a7e2b75dcc2a43e5e644"
+          }
+        },
+        {
+          "client_id": "925019682416-duvllfhr13hub3fs150uekm6kh483eu1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDO95eXGHblC1CHvsZiBof0CEYv9ycx9qg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "925019682416-duvllfhr13hub3fs150uekm6kh483eu1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "925019682416-2s33mbmpcaj9old3dk56cgrt8o8qb973.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.nopalsoft.flutterSimpleFirebaseCrudCubit"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:925019682416:android:b3326a73acc36cc71426b5",
+        "android_client_info": {
+          "package_name": "com.nopalsoft.flutter_simple_firebase_crud_getx"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "925019682416-duvllfhr13hub3fs150uekm6kh483eu1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDO95eXGHblC1CHvsZiBof0CEYv9ycx9qg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "925019682416-duvllfhr13hub3fs150uekm6kh483eu1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "925019682416-2s33mbmpcaj9old3dk56cgrt8o8qb973.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.nopalsoft.flutterSimpleFirebaseCrudCubit"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:925019682416:android:ba6f4707e9e238091426b5",
+        "android_client_info": {
+          "package_name": "com.nopalsoft.flutter_simple_firebase_crud_riverpod"
+        }
+      },
+      "oauth_client": [
+        {
           "client_id": "925019682416-duvllfhr13hub3fs150uekm6kh483eu1.apps.googleusercontent.com",
           "client_type": 3
         }
