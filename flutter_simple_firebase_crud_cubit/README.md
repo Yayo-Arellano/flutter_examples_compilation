@@ -7,7 +7,7 @@
 - Separate the app in multiple layers (presentation, business logic, data)
 - Cubit tests
 
-# Videotutorial
+# Videotutorial (spanish)
 
 <a href="https://youtu.be/8QW39PYRDvQ"> <img src="screenshots/youtube.png" width="70%"/></a>
 

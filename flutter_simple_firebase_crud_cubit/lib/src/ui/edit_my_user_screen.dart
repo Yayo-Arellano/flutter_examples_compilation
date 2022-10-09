@@ -27,6 +27,7 @@ class EditMyUserScreen extends StatelessWidget {
               return Visibility(
                 visible: userToEdit != null,
                 child: IconButton(
+                  key: const Key('Delete'),
                   icon: const Icon(Icons.delete),
                   onPressed: () {
                     context.read<EditMyUserCubit>().deleteMyUser();
@@ -125,16 +126,19 @@ class _MyUserSectionState extends State<_MyUserSection> {
             ),
             const SizedBox(height: 8),
             TextField(
+              key: const Key('Name'),
               controller: _nameController,
               decoration: const InputDecoration(labelText: 'Name'),
             ),
             const SizedBox(height: 8),
             TextField(
+              key: const Key('Last Name'),
               controller: _lastNameController,
               decoration: const InputDecoration(labelText: 'Last Name'),
             ),
             const SizedBox(height: 8),
             TextField(
+              key: const Key('Age'),
               controller: _ageController,
               keyboardType: TextInputType.number,
               decoration: const InputDecoration(labelText: 'Age'),

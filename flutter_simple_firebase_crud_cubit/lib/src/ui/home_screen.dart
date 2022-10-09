@@ -15,6 +15,7 @@ class HomeScreen extends StatelessWidget {
         title: const Text('Home screen'),
         actions: [
           IconButton(
+            key: const Key('Logout'),
             onPressed: () {
               // Get the instance of AuthCubit and signOut
               final authCubit = context.read<AuthCubit>();

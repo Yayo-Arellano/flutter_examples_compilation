@@ -35,9 +35,23 @@
     		<string>Editor</string>
     		<key>CFBundleURLSchemes</key>
     		<array>
-    			<string>com.googleusercontent.apps.925019682416-2s33mbmpcaj9old3dk56cgrt8o8qb973</string>
+    			<string>{your-REVERSED_CLIENT_ID}</string>
+    			<string>fb{your-app-id}</string>
     		</array>
     	</dict>
+    </array>
+    <key>FacebookAppID</key>
+    <string>{your-app-id}</string>
+    <key>FacebookClientToken</key>
+    <string>{your-client-token}</string>
+    <key>FacebookDisplayName</key>
+    <string>{your-app-name}</string>
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+      <string>fbapi</string>
+      <string>fb-messenger-share-api</string>
+      <string>fbauth2</string>
+      <string>fbshareextension</string>
     </array>
 	<key>NSPhotoLibraryUsageDescription</key>
     <string>We require access to your photo library</string>

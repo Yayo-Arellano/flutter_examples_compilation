@@ -7,11 +7,11 @@ import 'package:page_indicator/page_indicator.dart';
 
 // Replace with your client id
 final googleClientId = kIsWeb || Platform.isAndroid
-    ? '925019682416-duvllfhr13hub3fs150uekm6kh483eu1.apps.googleusercontent.com'
-    : '925019682416-2s33mbmpcaj9old3dk56cgrt8o8qb973.apps.googleusercontent.com';
+    ? 'your-android-and-web-client-id'
+    : 'your-ios-client-id';
 
 // Replace with your client id
-const facebookClientId = 'xxxxxx';
+const facebookClientId = 'your-facebook-client-id';
 
 class IntroScreen extends StatelessWidget {
   const IntroScreen({super.key});
@@ -67,7 +67,6 @@ class _DescriptionPage extends StatelessWidget {
   final String imagePath;
 
   const _DescriptionPage({
-    super.key,
     required this.text,
     required this.imagePath,
   });
