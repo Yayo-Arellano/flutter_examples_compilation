@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "34234234234345",
+    "project_id": "flavors-dev",
+    "storage_bucket": "flavors-dev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "334523453454235435",
+        "android_client_info": {
+          "package_name": "com.nopalsoft.flavors.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "123123123-qajdfgry234sdfdfg055vllra.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nopalsoft.flavors.dev",
+            "certificate_hash": "343214132432432434341324"
+          }
+        },
+        {
+          "client_id": "123123123-qajdfgry234sdfdfg055vllra.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "234321523524324123fddv4q34"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "123123123-qajdfgry234sdfdfg055vllra.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "123123123-qajdfgry234sdfdfg055vllra.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.nopalsoft.flavors.dev"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
