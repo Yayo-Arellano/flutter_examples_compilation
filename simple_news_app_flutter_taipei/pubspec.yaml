@@ -1,30 +1,30 @@
 name: flutter_bloc_architecture
-description: Demostrate the architecture of the app using flutter bloc
+description: Demonstrate the architecture of the app using flutter bloc
 publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.16.0 <3.0.0"
+  sdk: ">=2.19.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
   get_it: ^7.2.0
-  http: ^0.13.4
-  flutter_bloc: ^8.0.1
-  equatable: ^2.0.3
-  url_launcher: ^6.0.15
-  cached_network_image: ^3.2.0
+  http: ^0.13.5
+  equatable: ^2.0.5
+  flutter_bloc: ^8.1.1
+  url_launcher: ^6.1.8
+  cached_network_image: ^3.2.3
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  build_runner: ^2.1.8
-  json_serializable: ^6.1.5
-  bloc_test: ^9.0.3
-  mockito: ^5.1.0
+  build_runner: ^2.3.3
+  json_serializable: ^6.6.0
+  bloc_test: ^9.1.0
+  mockito: ^5.3.2
 
 
 flutter:

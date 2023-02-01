@@ -5,13 +5,13 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.14.4 <3.0.0"
+  sdk: ">=2.19.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
-  flutter_hooks: ^0.18.1
+  flutter_hooks: ^0.18.5+1
 
 dev_dependencies:
   flutter_test:

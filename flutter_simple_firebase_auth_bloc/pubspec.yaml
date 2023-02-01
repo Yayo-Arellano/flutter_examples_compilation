@@ -4,24 +4,25 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.18.0 <3.0.0"
+  sdk: ">=2.19.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
-  firebase_core: ^1.24.0
-  firebase_auth: ^3.11.2
-  firebase_storage: ^10.3.11
-  cloud_firestore: ^3.5.1
-  google_sign_in: ^5.4.2
+  path: ^1.8.2
+  firebase_core: ^2.4.1
+  firebase_auth: ^4.2.5
+  firebase_storage: ^11.0.10
+  cloud_firestore: ^4.3.1
+  google_sign_in: ^5.4.4
   flutter_bloc: ^8.1.1
   equatable: ^2.0.5
   page_indicator: ^0.4.1
-  flutter_facebook_auth: ^4.4.1+1
+  flutter_facebook_auth: ^5.0.7
   flutter_hooks: ^0.18.5+1
-  image_picker: ^0.8.6
-  cached_network_image: ^3.2.2
+  image_picker: ^0.8.6+1
+  cached_network_image: ^3.2.3
 
 
 dev_dependencies:

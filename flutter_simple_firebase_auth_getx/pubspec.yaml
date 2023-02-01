@@ -5,33 +5,33 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.14.4 <3.0.0"
+  sdk: ">=2.19.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
-  get: ^4.3.8
-  firebase_core: ^1.10.0
-  firebase_auth: ^3.2.0
-  firebase_storage: ^10.1.0
-  cloud_firestore: ^3.1.0
-  google_sign_in: ^5.2.1
-  flutter_facebook_auth: ^3.5.6
+  get: ^4.6.5
+  firebase_core: ^2.4.1
+  firebase_auth: ^4.2.5
+  firebase_storage: ^11.0.10
+  cloud_firestore: ^4.3.1
+  google_sign_in: ^5.4.4
+  flutter_facebook_auth: ^5.0.7
 
-  equatable: ^2.0.3
+  equatable: ^2.0.5
   page_indicator: ^0.4.1
 
-  flutter_hooks: ^0.18.1
-  image_picker: ^0.8.4+4
-  cached_network_image: ^3.1.0+1
+  flutter_hooks: ^0.18.5+1
+  image_picker: ^0.8.6+1
+  cached_network_image: ^3.2.3
 
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  flutter_lints: ^1.0.4
+  flutter_lints: ^2.0.1
 
 flutter:
   uses-material-design: true

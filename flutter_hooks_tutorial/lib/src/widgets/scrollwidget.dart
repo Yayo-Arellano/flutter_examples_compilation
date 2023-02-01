@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fluttecr_hooks/flutter_hooks.dart';
+import 'package:flutter_hooks/flutter_hooks.dart';
 
 final _red = new GlobalKey();
 final _blue = new GlobalKey();
