@@ -1,8 +1,10 @@
 import 'dart:io';
 
+import 'package:firebase_ui_auth/firebase_ui_auth.dart';
+import 'package:firebase_ui_oauth_facebook/firebase_ui_oauth_facebook.dart';
+import 'package:firebase_ui_oauth_google/firebase_ui_oauth_google.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutterfire_ui/auth.dart';
 import 'package:page_indicator/page_indicator.dart';
 
 // Replace with your client id
@@ -104,10 +106,10 @@ class _LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SignInScreen(
-      providerConfigs: [
-        GoogleProviderConfiguration(clientId: googleClientId),
-        const FacebookProviderConfiguration(clientId: facebookClientId),
-        const EmailProviderConfiguration(),
+      providers: [
+        GoogleProvider(clientId: googleClientId),
+        FacebookProvider(clientId: facebookClientId),
+        EmailAuthProvider(),
       ],
     );
   }

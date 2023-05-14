@@ -1,6 +1,6 @@
 # Flutter simple firebase authentication with [GetX](https://pub.dev/packages/get)
 
-Flutter Version: Stable 2.5.3
+Flutter Version: Stable 3.10.0
 
 - Learn how to call a REST API with [http](https://pub.dev/packages/http)
 - Save response data in SQLite with [sqflite](https://pub.dev/packages/sqflite)

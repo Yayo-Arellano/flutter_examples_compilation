@@ -123,8 +123,8 @@ class _MyUserSection extends StatelessWidget {
                 alignment: Alignment.center,
                 children: [
                   ElevatedButton(
-                    child: const Text('Save'),
                     onPressed: isSaving ? null : () => userController.saveMyUser(),
+                    child: const Text('Save'),
                   ),
                   if (isSaving) const CircularProgressIndicator(),
                 ],

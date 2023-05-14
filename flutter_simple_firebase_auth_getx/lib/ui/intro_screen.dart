@@ -32,7 +32,13 @@ class _IntroPager extends HookWidget {
       return AbsorbPointer(
         absorbing: homeSignInController.isLoading.value,
         child: PageIndicatorContainer(
+          align: IndicatorAlign.bottom,
+          length: 4,
+          indicatorSpace: 12,
+          indicatorColor: Colors.grey,
+          indicatorSelectorColor: Colors.black,
           child: PageView(
+            controller: pageController,
             children: <Widget>[
               _DescriptionPage(
                 text: exampleText,
@@ -48,13 +54,7 @@ class _IntroPager extends HookWidget {
               ),
               _LoginPage(),
             ],
-            controller: pageController,
           ),
-          align: IndicatorAlign.bottom,
-          length: 4,
-          indicatorSpace: 12,
-          indicatorColor: Colors.grey,
-          indicatorSelectorColor: Colors.black,
         ),
       );
     });

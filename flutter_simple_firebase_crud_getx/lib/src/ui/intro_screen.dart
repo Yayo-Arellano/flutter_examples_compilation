@@ -1,8 +1,11 @@
+import 'package:firebase_ui_auth/firebase_ui_auth.dart';
+import 'package:firebase_ui_oauth_facebook/firebase_ui_oauth_facebook.dart';
+import 'package:firebase_ui_oauth_google/firebase_ui_oauth_google.dart';
 import 'package:flutter/material.dart';
-import 'package:flutterfire_ui/auth.dart';
 import 'package:page_indicator/page_indicator.dart';
 
-const googleClientId = '925019682416-duvllfhr13hub3fs150uekm6kh483eu1.apps.googleusercontent.com';
+const googleClientId =
+    '925019682416-duvllfhr13hub3fs150uekm6kh483eu1.apps.googleusercontent.com';
 
 class IntroScreen extends StatelessWidget {
   const IntroScreen({super.key});
@@ -19,7 +22,8 @@ class IntroScreen extends StatelessWidget {
 }
 
 class _IntroPager extends StatelessWidget {
-  final String exampleText = 'Lorem ipsum dolor sit amet, consecrated advising elit, '
+  final String exampleText =
+      'Lorem ipsum dolor sit amet, consecrated advising elit, '
       'sed do eiusmod tempor incididunt ut labore et '
       'dolore magna aliqua. Ut enim ad minim veniam.';
 
@@ -57,7 +61,6 @@ class _DescriptionPage extends StatelessWidget {
   final String imagePath;
 
   const _DescriptionPage({
-    super.key,
     required this.text,
     required this.imagePath,
   });
@@ -80,7 +83,8 @@ class _DescriptionPage extends StatelessWidget {
               child: Text(
                 text,
                 textAlign: TextAlign.center,
-                style: const TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
+                style: const TextStyle(
+                    fontSize: 24.0, fontWeight: FontWeight.bold),
               ),
             ),
           ),
@@ -93,11 +97,11 @@ class _DescriptionPage extends StatelessWidget {
 class _LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return const SignInScreen(
-      providerConfigs: [
-        GoogleProviderConfiguration(clientId: googleClientId),
-        FacebookProviderConfiguration(clientId: '...'),
-        EmailProviderConfiguration(),
+    return SignInScreen(
+      providers: [
+        GoogleProvider(clientId: googleClientId),
+        FacebookProvider(clientId: '...'),
+        EmailAuthProvider(),
       ],
     );
   }

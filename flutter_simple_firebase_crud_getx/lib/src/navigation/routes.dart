@@ -12,19 +12,19 @@ class Routes {
   static const editUser = '/editUser';
 
   static Route routes(RouteSettings settings) {
-    GetPageRoute _buildRoute(Widget widget) {
+    GetPageRoute buildRoute(Widget widget) {
       return GetPageRoute(page: () => widget, settings: settings);
     }
 
     switch (settings.name) {
       case splash:
-        return _buildRoute(const SplashScreen());
+        return buildRoute(const SplashScreen());
       case intro:
-        return _buildRoute(const IntroScreen());
+        return buildRoute(const IntroScreen());
       case home:
-        return _buildRoute(const HomeScreen());
+        return buildRoute(const HomeScreen());
       case editUser:
-        return _buildRoute(const EditMyUserScreen());
+        return buildRoute(const EditMyUserScreen());
       default:
         throw Exception('Route does not exists');
     }

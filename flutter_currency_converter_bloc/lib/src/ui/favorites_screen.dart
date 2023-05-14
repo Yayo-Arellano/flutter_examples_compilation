@@ -7,7 +7,6 @@ import 'package:flutter_currency_converter/src/localization/locale_keys.g.dart';
 import 'package:flutter_currency_converter/src/model/currency.dart';
 import 'package:flutter_currency_converter/src/repository/currency_repository.dart';
 import 'package:flutter_currency_converter/src/ui/bottom_bar.dart';
-import 'package:provider/provider.dart';
 
 class FavoritesScreen extends StatelessWidget {
   static Widget create(BuildContext context) {

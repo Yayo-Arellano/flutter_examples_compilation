@@ -2,7 +2,7 @@
 
 ## Simple News App using Cubit ([flutter_bloc](https://pub.dev/packages/flutter_bloc))
 
-Flutter Version: Stable 2.10.3
+Working on flutter 3.10.0
 
 - Learn how to use manage states using [cubit](https://pub.dev/packages/flutter_bloc)
 - Separate the app in multiple layers (presentation, business logic, data)

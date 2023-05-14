@@ -1,7 +1,6 @@
 # Flutter Connectivity 
 
-Created on Flutter Stable 2.0.3
-Working on Flutter Stable 2.10.5
+Working on flutter 3.10.0
 
 How to check if the device has an internet connection
 

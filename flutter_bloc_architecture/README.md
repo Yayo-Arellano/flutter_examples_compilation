@@ -1,6 +1,6 @@
 # Flutter Example: Unit testing [http](https://pub.dev/packages/http) requests
 
-Flutter Version: Stable 2.0.0
+Version: Stable 3.10.0
 
 In this example we are going to create an app using [Flutter Bloc](https://pub.dev/packages/flutter_bloc)
 

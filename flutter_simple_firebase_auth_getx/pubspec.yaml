@@ -5,26 +5,27 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.19.0 <3.0.0"
+  sdk: ">=3.0.0 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
   get: ^4.6.5
-  firebase_core: ^2.4.1
-  firebase_auth: ^4.2.5
-  firebase_storage: ^11.0.10
-  cloud_firestore: ^4.3.1
-  google_sign_in: ^5.4.4
-  flutter_facebook_auth: ^5.0.7
+  firebase_core: ^2.12.0
+  firebase_auth: ^4.6.0
+  firebase_storage: ^11.2.0
+  cloud_firestore: ^4.7.0
+  google_sign_in: ^6.1.0
+  flutter_facebook_auth: ^5.0.11
 
   equatable: ^2.0.5
   page_indicator: ^0.4.1
 
-  flutter_hooks: ^0.18.5+1
-  image_picker: ^0.8.6+1
+  flutter_hooks: ^0.18.6
+  image_picker: ^0.8.7+5
   cached_network_image: ^3.2.3
+  path: ^1.8.3
 
 
 dev_dependencies:

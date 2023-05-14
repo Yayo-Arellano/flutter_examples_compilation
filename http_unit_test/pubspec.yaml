@@ -4,14 +4,14 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.19.0 <3.0.0"
+  sdk: ">=3.0.0 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
-  http: ^0.13.5
-  json_annotation: ^4.8.0
+  http: ^0.13.6
+  json_annotation: ^4.8.1
   cached_network_image: ^3.2.3
 
 dev_dependencies:
@@ -19,8 +19,8 @@ dev_dependencies:
     sdk: flutter
 
   flutter_lints: ^2.0.1
-  build_runner: ^2.3.3
-  json_serializable: ^6.6.0
+  build_runner: ^2.4.4
+  json_serializable: ^6.6.2
 
 
 flutter:

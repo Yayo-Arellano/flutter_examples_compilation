@@ -46,7 +46,7 @@ class MyHomePage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Siasasdasdte'),
+        title: const Text('Random people'),
         actions: [
           IconButton(
               onPressed: () async {

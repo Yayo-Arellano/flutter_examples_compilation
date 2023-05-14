@@ -11,7 +11,6 @@ import 'package:flutter_currency_converter/src/repository/currency_repository.da
 import 'package:flutter_currency_converter/src/ui/bottom_bar.dart';
 import 'package:flutter_currency_converter/src/utils/currency_symbols.dart';
 import 'package:flutter_simple_calculator/flutter_simple_calculator.dart';
-import 'package:provider/provider.dart';
 
 class ConverterScreen extends StatelessWidget {
   static Widget create(BuildContext context) {
@@ -59,7 +58,7 @@ class ConverterScreen extends StatelessWidget {
   }
 }
 
-class _AppBar extends StatelessWidget with PreferredSizeWidget {
+class _AppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Size get preferredSize => Size.fromHeight(kToolbarHeight);
 
@@ -112,7 +111,7 @@ class _SelectedRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        color: Theme.of(context).accentColor,
+        color: Theme.of(context).colorScheme.secondary,
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Row(

@@ -1,6 +1,6 @@
 # Flutter Currency Converter
 
-Flutter Version: Stable 2.10.5
+Working on flutter 3.10.0
 
 - Learn how to use manage states using [Flutter Bloc](https://pub.dev/packages/flutter_bloc)
 - Local data persistence using [SQFLite](https://pub.dev/packages/sqflite)

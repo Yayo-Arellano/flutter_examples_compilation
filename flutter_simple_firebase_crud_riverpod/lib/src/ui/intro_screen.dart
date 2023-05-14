@@ -1,5 +1,7 @@
+import 'package:firebase_ui_auth/firebase_ui_auth.dart';
+import 'package:firebase_ui_oauth_facebook/firebase_ui_oauth_facebook.dart';
+import 'package:firebase_ui_oauth_google/firebase_ui_oauth_google.dart';
 import 'package:flutter/material.dart';
-import 'package:flutterfire_ui/auth.dart';
 import 'package:page_indicator/page_indicator.dart';
 
 // Replace with your client id
@@ -63,7 +65,6 @@ class _DescriptionPage extends StatelessWidget {
   final String imagePath;
 
   const _DescriptionPage({
-    super.key,
     required this.text,
     required this.imagePath,
   });
@@ -100,11 +101,11 @@ class _DescriptionPage extends StatelessWidget {
 class _LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return const SignInScreen(
-      providerConfigs: [
-        GoogleProviderConfiguration(clientId: googleClientId),
-        FacebookProviderConfiguration(clientId: facebookClientId),
-        EmailProviderConfiguration(),
+    return SignInScreen(
+      providers: [
+        GoogleProvider(clientId: googleClientId),
+        FacebookProvider(clientId: facebookClientId),
+        EmailAuthProvider(),
       ],
     );
   }
