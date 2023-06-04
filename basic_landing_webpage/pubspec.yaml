@@ -13,6 +13,8 @@ dependencies:
   url_launcher: ^6.1.11
   url_strategy: ^0.2.0
   hooks_riverpod: ^2.3.6
+  webview_flutter_web: ^0.2.2+1
+  webview_flutter: ^4.2.1
 
 dev_dependencies:
   flutter_test:

@@ -1,20 +1,14 @@
-import 'dart:html';
-import 'dart:ui' as ui;
-
 import 'package:basic_landing_webpage/src/widgets/responsive_widget.dart';
 import 'package:flutter/material.dart';
+import 'package:webview_flutter/webview_flutter.dart';
 
 const youtubeVideo = 'https://www.youtube.com/embed/k32xyP3KuWE';
 
+final _webController = WebViewController()
+  ..loadRequest(Uri.parse(youtubeVideo));
+
 class FeaturesContent extends ResponsiveWidget {
-  FeaturesContent({Key? key}) : super(key: key) {
-    ui.platformViewRegistry.registerViewFactory(
-      'youtube-video',
-      (int viewId) => IFrameElement()
-        ..src = youtubeVideo
-        ..style.border = 'none',
-    );
-  }
+  FeaturesContent({Key? key}) : super(key: key);
 
   @override
   Widget buildDesktop(BuildContext context) => FeaturesContentResponsive(200);
@@ -51,7 +45,9 @@ class FeaturesContentResponsive extends StatelessWidget {
             Container(
               width: 800,
               height: 450,
-              child: HtmlElementView(viewType: 'youtube-video', key: UniqueKey()),
+              child: WebViewWidget(
+                controller: _webController,
+              ),
             )
           ],
         ),

@@ -20,9 +20,9 @@ class MyWebPage extends HookConsumerWidget {
     final isScrolled = ref.read(scrolledProvider);
 
     if (controller.position.pixels > 5 && !isScrolled) {
-      ref.read(scrolledProvider.state).state = true;
+      ref.read(scrolledProvider.notifier).state = true;
     } else if (controller.position.pixels <= 5 && isScrolled) {
-      ref.read(scrolledProvider.state).state = false;
+      ref.read(scrolledProvider.notifier).state = false;
     }
   }
 
@@ -43,7 +43,7 @@ class MyWebPage extends HookConsumerWidget {
     double width = MediaQuery.of(context).size.width;
     double maxWith = width > 1200 ? 1200 : width;
 
-    ref.watch(currentPageProvider.state).addListener(scrollTo, fireImmediately: false);
+    ref.watch(currentPageProvider.notifier).addListener(scrollTo, fireImmediately: false);
 
 
     return Scaffold(

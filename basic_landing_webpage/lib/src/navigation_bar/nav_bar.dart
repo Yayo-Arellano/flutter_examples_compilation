@@ -48,22 +48,22 @@ class DesktopNavBar extends HookConsumerWidget {
             ),
             Expanded(child: Container()),
             NavBarButton(
-              onTap: () => ref.read(currentPageProvider.state).state = homeKey,
+              onTap: () => ref.read(currentPageProvider.notifier).state = homeKey,
               text: "Home",
             ),
             NavBarButton(
               onTap: () =>
-                  ref.read(currentPageProvider.state).state = featureKey,
+                  ref.read(currentPageProvider.notifier).state = featureKey,
               text: "Features",
             ),
             NavBarButton(
               onTap: () =>
-                  ref.read(currentPageProvider.state).state = screenshotKey,
+                  ref.read(currentPageProvider.notifier).state = screenshotKey,
               text: "Screenshots",
             ),
             NavBarButton(
               onTap: () =>
-                  ref.read(currentPageProvider.state).state = contactKey,
+                  ref.read(currentPageProvider.notifier).state = contactKey,
               text: "Contact",
             ),
           ],
@@ -95,28 +95,28 @@ class MobileNavBar extends HookConsumerWidget {
                 NavBarButton(
                   text: "Home",
                   onTap: () {
-                    ref.read(currentPageProvider.state).state = homeKey;
+                    ref.read(currentPageProvider.notifier).state = homeKey;
                     containerHeight.value = 0;
                   },
                 ),
                 NavBarButton(
                   text: "Features",
                   onTap: () {
-                    ref.read(currentPageProvider.state).state = featureKey;
+                    ref.read(currentPageProvider.notifier).state = featureKey;
                     containerHeight.value = 0;
                   },
                 ),
                 NavBarButton(
                   text: "Screenshots",
                   onTap: () {
-                    ref.read(currentPageProvider.state).state = screenshotKey;
+                    ref.read(currentPageProvider.notifier).state = screenshotKey;
                     containerHeight.value = 0;
                   },
                 ),
                 NavBarButton(
                   text: "Contact",
                   onTap: () {
-                    ref.read(currentPageProvider.state).state = contactKey;
+                    ref.read(currentPageProvider.notifier).state = contactKey;
                     containerHeight.value = 0;
                   },
                 ),
