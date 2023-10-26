@@ -20,8 +20,7 @@ class EditMyUserScreen extends ConsumerWidget {
     final userToEdit = ModalRoute.of(context)?.settings.arguments as MyUser?;
 
     final homeScreen = ref.watch(editMyUserProvider(userToEdit));
-    ref.listen<EditMyUserNotifier>(editMyUserProvider(userToEdit),
-        (previous, next) {
+    ref.listen<EditMyUserNotifier>(editMyUserProvider(userToEdit), (previous, next) {
       if (next.isDone) {
         Navigator.of(context).pop();
       }
