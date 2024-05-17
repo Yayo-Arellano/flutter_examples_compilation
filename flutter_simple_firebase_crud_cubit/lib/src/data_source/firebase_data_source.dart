@@ -17,9 +17,7 @@ class FirebaseDataSource {
   FirebaseStorage get storage => FirebaseStorage.instance;
 
   // Generates and returns a new firestore id
-  String newId() {
-    return firestore.collection('tmp').doc().id;
-  }
+  String newId() => firestore.collection('tmp').doc().id;
 
   // Read all documents from MyUser collection from the authenticated user
   Stream<Iterable<MyUser>> getMyUsers() {

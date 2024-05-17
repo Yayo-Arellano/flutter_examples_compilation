@@ -13,6 +13,7 @@ enum AuthState {
 
 // Extends Cubit and will emit states of type AuthState
 class AuthCubit extends Cubit<AuthState> {
+
   // Get the injected AuthRepository
   final AuthRepository _authRepository = getIt();
   StreamSubscription? _authSubscription;

@@ -92,7 +92,9 @@ class _DescriptionPage extends StatelessWidget {
                 text,
                 textAlign: TextAlign.center,
                 style: const TextStyle(
-                    fontSize: 24.0, fontWeight: FontWeight.bold),
+                  fontSize: 24.0,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ),
           ),

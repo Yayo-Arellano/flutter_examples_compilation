@@ -11,10 +11,12 @@ class Routes {
   static const editUser = '/editUser';
 
   static Route routes(RouteSettings settings) {
-
     // Helper nested function.
     MaterialPageRoute buildRoute(Widget widget) {
-      return MaterialPageRoute(builder: (_) => widget, settings: settings);
+      return MaterialPageRoute(
+        builder: (_) => widget,
+        settings: settings,
+      );
     }
 
     switch (settings.name) {

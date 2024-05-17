@@ -5,12 +5,9 @@ class AuthRepositoryImp extends AuthRepository {
   final _firebaseAuth = FirebaseAuth.instance;
 
   @override
-  Stream<UserUID?> get onAuthStateChanged {
-    return _firebaseAuth.authStateChanges().asyncMap((user) => user?.uid);
-  }
+  Stream<UserUID?> get onAuthStateChanged =>
+      _firebaseAuth.authStateChanges().asyncMap((user) => user?.uid);
 
   @override
-  Future<void> signOut() {
-    return _firebaseAuth.signOut();
-  }
+  Future<void> signOut() => _firebaseAuth.signOut();
 }
