@@ -1,6 +1,6 @@
 # Flutter Example: Basic landing web page
 
-Working on Flutter Stable 3.10.0
+Working on Flutter Stable  3.24.3
 
 The main purpose of this example is creating a responsive landing
 website. [Website Example](https://yayo-arellano.github.io/flutter_examples_compilation/basic_landing_webpage).
