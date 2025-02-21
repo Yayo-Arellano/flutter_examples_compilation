@@ -27,7 +27,7 @@ class _CounterExampleState extends State<CounterExample> {
             Text('counter_description'.tr()),
             Text(
               'press_times'.plural(_counter),
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.headlineMedium,
             ),
             SizedBox(height: 48),
             ElevatedButton(
