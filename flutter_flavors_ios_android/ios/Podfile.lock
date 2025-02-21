@@ -1,85 +1,41 @@
 PODS:
   - Flutter (1.0.0)
-  - Google-Mobile-Ads-SDK (9.10.0):
-    - GoogleAppMeasurement (< 10.0, >= 7.0)
+  - Google-Mobile-Ads-SDK (11.13.0):
     - GoogleUserMessagingPlatform (>= 1.1)
-  - google_mobile_ads (0.0.1):
+  - google_mobile_ads (5.3.1):
     - Flutter
-    - Google-Mobile-Ads-SDK (= 9.10.0)
-  - GoogleAppMeasurement (9.6.0):
-    - GoogleAppMeasurement/AdIdSupport (= 9.6.0)
-    - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
-    - GoogleUtilities/MethodSwizzler (~> 7.7)
-    - GoogleUtilities/Network (~> 7.7)
-    - "GoogleUtilities/NSData+zlib (~> 7.7)"
-    - nanopb (< 2.30910.0, >= 2.30908.0)
-  - GoogleAppMeasurement/AdIdSupport (9.6.0):
-    - GoogleAppMeasurement/WithoutAdIdSupport (= 9.6.0)
-    - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
-    - GoogleUtilities/MethodSwizzler (~> 7.7)
-    - GoogleUtilities/Network (~> 7.7)
-    - "GoogleUtilities/NSData+zlib (~> 7.7)"
-    - nanopb (< 2.30910.0, >= 2.30908.0)
-  - GoogleAppMeasurement/WithoutAdIdSupport (9.6.0):
-    - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
-    - GoogleUtilities/MethodSwizzler (~> 7.7)
-    - GoogleUtilities/Network (~> 7.7)
-    - "GoogleUtilities/NSData+zlib (~> 7.7)"
-    - nanopb (< 2.30910.0, >= 2.30908.0)
-  - GoogleUserMessagingPlatform (2.0.1)
-  - GoogleUtilities/AppDelegateSwizzler (7.8.0):
-    - GoogleUtilities/Environment
-    - GoogleUtilities/Logger
-    - GoogleUtilities/Network
-  - GoogleUtilities/Environment (7.8.0):
-    - PromisesObjC (< 3.0, >= 1.2)
-  - GoogleUtilities/Logger (7.8.0):
-    - GoogleUtilities/Environment
-  - GoogleUtilities/MethodSwizzler (7.8.0):
-    - GoogleUtilities/Logger
-  - GoogleUtilities/Network (7.8.0):
-    - GoogleUtilities/Logger
-    - "GoogleUtilities/NSData+zlib"
-    - GoogleUtilities/Reachability
-  - "GoogleUtilities/NSData+zlib (7.8.0)"
-  - GoogleUtilities/Reachability (7.8.0):
-    - GoogleUtilities/Logger
-  - nanopb (2.30909.0):
-    - nanopb/decode (= 2.30909.0)
-    - nanopb/encode (= 2.30909.0)
-  - nanopb/decode (2.30909.0)
-  - nanopb/encode (2.30909.0)
-  - PromisesObjC (2.1.1)
+    - Google-Mobile-Ads-SDK (~> 11.13.0)
+    - webview_flutter_wkwebview
+  - GoogleUserMessagingPlatform (2.7.0)
+  - webview_flutter_wkwebview (0.0.1):
+    - Flutter
+    - FlutterMacOS
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
   - google_mobile_ads (from `.symlinks/plugins/google_mobile_ads/ios`)
+  - webview_flutter_wkwebview (from `.symlinks/plugins/webview_flutter_wkwebview/darwin`)
 
 SPEC REPOS:
   trunk:
     - Google-Mobile-Ads-SDK
-    - GoogleAppMeasurement
     - GoogleUserMessagingPlatform
-    - GoogleUtilities
-    - nanopb
-    - PromisesObjC
 
 EXTERNAL SOURCES:
   Flutter:
     :path: Flutter
   google_mobile_ads:
     :path: ".symlinks/plugins/google_mobile_ads/ios"
+  webview_flutter_wkwebview:
+    :path: ".symlinks/plugins/webview_flutter_wkwebview/darwin"
 
 SPEC CHECKSUMS:
-  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
-  Google-Mobile-Ads-SDK: eb398023f0d97cdd259b171052f1eb433de00c87
-  google_mobile_ads: f75c0a851119350bae87dc06aac86102a7e690a0
-  GoogleAppMeasurement: 6de2b1a69e4326eb82ee05d138f6a5cb7311bcb1
-  GoogleUserMessagingPlatform: 5f8b30daf181805317b6b985bb51c1ff3beca054
-  GoogleUtilities: 1d20a6ad97ef46f67bbdec158ce00563a671ebb7
-  nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
-  PromisesObjC: ab77feca74fa2823e7af4249b8326368e61014cb
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  Google-Mobile-Ads-SDK: 14f57f2dc33532a24db288897e26494640810407
+  google_mobile_ads: fe0e2c1764ad95323dd0e3081d0bb2d58411f957
+  GoogleUserMessagingPlatform: a8b56893477f67212fbc8411c139e61d463349f5
+  webview_flutter_wkwebview: a4af96a051138e28e29f60101d094683b9f82188
 
-PODFILE CHECKSUM: 876bedc3831e682d6fef80e63ffaa798ed6cc9a6
+PODFILE CHECKSUM: fa52d35bde0c5fe207acecbd0b3a901d7202f210
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.15.2
