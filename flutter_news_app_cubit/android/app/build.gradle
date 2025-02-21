@@ -25,7 +25,6 @@ if (flutterVersionName == null) {
 android {
     namespace "com.yayocode.news.app.flutter_news_app_cubit"
     compileSdkVersion flutter.compileSdkVersion
-    ndkVersion flutter.ndkVersion
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -34,10 +33,6 @@ android {
 
     kotlinOptions {
         jvmTarget = '1.8'
-    }
-
-    sourceSets {
-        main.java.srcDirs += 'src/main/kotlin'
     }
 
     defaultConfig {
@@ -63,5 +58,3 @@ android {
 flutter {
     source '../..'
 }
-
-dependencies {}

@@ -1,6 +1,6 @@
 // DO NOT EDIT. This is code generated via package:easy_localization/generate.dart
 
-// ignore_for_file: prefer_single_quotes, avoid_renaming_method_parameters
+// ignore_for_file: prefer_single_quotes, avoid_renaming_method_parameters, constant_identifier_names
 
 import 'dart:ui';
 
@@ -14,20 +14,20 @@ class CodegenLoader extends AssetLoader{
     return Future.value(mapLocales[locale.toString()]);
   }
 
-  static const Map<String,dynamic> zh = {
+  static const Map<String,dynamic> _zh = {
   "top_headlines": "最新的新聞",
   "search_news": "找新聞",
   "view_more": "看更多"
 };
-static const Map<String,dynamic> en = {
+static const Map<String,dynamic> _en = {
   "top_headlines": "Top Headlines",
   "search_news": "Search News",
   "view_more": "View more"
 };
-static const Map<String,dynamic> es = {
+static const Map<String,dynamic> _es = {
   "top_headlines": "Titulares Principales",
   "search_news": "Buscar Noticias",
   "view_more": "Ver mas"
 };
-static const Map<String, Map<String,dynamic>> mapLocales = {"zh": zh, "en": en, "es": es};
+static const Map<String, Map<String,dynamic>> mapLocales = {"zh": _zh, "en": _en, "es": _es};
 }

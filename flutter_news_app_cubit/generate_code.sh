@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-fvm global 3.24.3
+fvm global 3.29.0
 flutter clean
 flutter pub get
 # https://pub.dev/packages/easy_localization
