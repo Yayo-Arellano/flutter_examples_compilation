@@ -1,14 +1,4 @@
 # Flutter Connectivity 
 
-Working on flutter 3.10.0
-
-How to check if the device has an internet connection
-
-# Screenshots
-
-| Internet | No Internet |
-| ---------------- | --------------------- |
-| ![Image 1](screenshots/image1.png) |![Image 2](screenshots/image2.png) |
-
-# Youtube Video
-[![Youtube](screenshots/youtube.png)](https://youtu.be/gNNpaXeu9XU)
+The package https://pub.dev/packages/connectivity was discontinued. Please check the 
+updated example here [Flutter Connectivity Example](../flutter_connectivity_plus_tutorial)
