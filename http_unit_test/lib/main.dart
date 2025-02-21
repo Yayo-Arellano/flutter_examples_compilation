@@ -41,7 +41,7 @@ class TopNews extends StatelessWidget {
         title: const Text('Top News'),
       ),
       body: FutureBuilder<List<Article>>(
-        future: newsProvider.topHeadlines('tw'),
+        future: newsProvider.topHeadlines('us'),
         builder: (context, snapshot) {
           if (snapshot.hasError) {
             if (snapshot.error is MissingApiKeyException) {
