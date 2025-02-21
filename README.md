@@ -2,6 +2,8 @@
 
 This is a compilation of Flutter projects that I used for my tutorials on my [YouTube channel](https://www.youtube.com/channel/UC9WSk7SkAXLJkT6NLg1p2cA) or my [Blog](https://www.yayocode.com/).
 
+All projects should be working on the latest version of Flutter. As of now is 3.29.0
+
 ## State Management
 ### [Cubit][5010]
 
