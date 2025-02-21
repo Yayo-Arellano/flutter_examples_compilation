@@ -29,30 +29,33 @@ class ScrollWidget extends HookWidget {
       ),
       body: Column(
         children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              OutlinedButton(
-                onPressed: () => scrollTo(_red),
-                child: Text('Red'),
-              ),
-              OutlinedButton(
-                onPressed: () => scrollTo(_blue),
-                child: Text('Blue'),
-              ),
-              OutlinedButton(
-                onPressed: () => scrollTo(_yellow),
-                child: Text('Yellow'),
-              ),
-              OutlinedButton(
-                onPressed: () => scrollTo(_green),
-                child: Text('Green'),
-              ),
-              OutlinedButton(
-                onPressed: () => scrollTo(_orange),
-                child: Text('Orange'),
-              )
-            ],
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                OutlinedButton(
+                  onPressed: () => scrollTo(_red),
+                  child: Text('Red'),
+                ),
+                OutlinedButton(
+                  onPressed: () => scrollTo(_blue),
+                  child: Text('Blue'),
+                ),
+                OutlinedButton(
+                  onPressed: () => scrollTo(_yellow),
+                  child: Text('Yellow'),
+                ),
+                OutlinedButton(
+                  onPressed: () => scrollTo(_green),
+                  child: Text('Green'),
+                ),
+                OutlinedButton(
+                  onPressed: () => scrollTo(_orange),
+                  child: Text('Orange'),
+                )
+              ],
+            ),
           ),
           Expanded(
             child: SingleChildScrollView(
