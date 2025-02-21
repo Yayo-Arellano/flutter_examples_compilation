@@ -4,33 +4,36 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: ">=3.0.0 <4.0.0"
+  sdk: ^3.7.0
 
 dependencies:
   flutter:
     sdk: flutter
 
-  get_it: ^7.6.8
-  flutter_bloc: ^8.1.5
-  firebase_core: ^2.28.0
-  cloud_firestore: ^4.16.0
-  firebase_storage: ^11.7.0
-  firebase_auth: ^4.19.0
-  firebase_ui_auth: ^1.13.1
-  firebase_ui_oauth_google: ^1.3.1
-  firebase_ui_oauth_facebook: ^1.2.19
-  equatable: ^2.0.5
-  page_indicator: ^0.4.1
-  image_picker: ^1.0.7
-  cached_network_image: ^3.3.1
+  get_it: ^8.0.3
+  flutter_bloc: ^9.0.0
+  firebase_core: ^3.12.0
+  cloud_firestore: ^5.6.4
+  firebase_storage: ^12.4.3
+  firebase_auth: ^5.5.0
+  firebase_ui_auth: ^1.16.1
+  firebase_ui_oauth_google: ^1.4.1
+  firebase_ui_oauth_facebook: ^1.3.1
+  equatable: ^2.0.7
+  page_indicator:
+    git:
+      url: https://github.com/CaiJingLong/flutter_page_indicator.git
+      ref: cb6481a9ef55efe059c5cce38023a6c517e183cb
+  image_picker: ^1.1.2
+  cached_network_image: ^3.4.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  flutter_lints: ^3.0.2
-  bloc_test: ^9.1.7
-  mocktail: ^1.0.3
+  flutter_lints: ^5.0.0
+  bloc_test: ^10.0.0
+  mocktail: ^1.0.4
 
 
 flutter:
