@@ -3,7 +3,7 @@
   "description": "flutter_chrome_extension",
   "version": "1.0.0",
   "content_security_policy": {
-    "extension_pages": "script-src 'self' ; object-src 'self'"
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';"
   },
   "action": {
     "default_popup": "index.html",
