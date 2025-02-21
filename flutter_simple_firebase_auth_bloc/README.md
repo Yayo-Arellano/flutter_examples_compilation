@@ -1,6 +1,6 @@
 # Flutter simple firebase authentication with [Flutter Bloc](https://pub.dev/packages/flutter_bloc)
 
-Flutter version 3.10.0
+Flutter version 3.29.0
 
 - Login with Google, Facebook, email & anonymously using [Firebase Authentication](https://firebase.google.com/products/auth)
 - Simple CRUD to firestore Read & Write.

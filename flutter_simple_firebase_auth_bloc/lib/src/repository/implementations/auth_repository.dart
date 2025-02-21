@@ -41,7 +41,7 @@ class AuthRepository extends AuthRepositoryBase {
   Future<AuthUser?> signInWithFacebook() async {
     final result = await FacebookAuth.instance.login();
 
-    final facebookAuthCredential = FacebookAuthProvider.credential(result.accessToken!.token);
+    final facebookAuthCredential = FacebookAuthProvider.credential(result.accessToken!.tokenString);
 
     final authResult = await FirebaseAuth.instance.signInWithCredential(facebookAuthCredential);
     return _userFromFirebase(authResult.user);
