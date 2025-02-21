@@ -20,7 +20,6 @@ class ContactContent extends ResponsiveWidget {
 class DesktopContactContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    double width = MediaQuery.of(context).size.width;
     return Container(
       color: Colors.blue,
       child: Padding(
@@ -28,15 +27,17 @@ class DesktopContactContent extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Container(
-              width: width * .4,
+            Expanded(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
                     "Contact Information Section",
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 40),
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 40,
+                    ),
                   ),
                   SizedBox(height: 25),
                   Text(

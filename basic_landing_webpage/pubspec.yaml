@@ -4,18 +4,18 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: ">=3.5.0 <4.0.0"
+  sdk: ^3.7.0
 
 dependencies:
   flutter:
     sdk: flutter
 
-  url_launcher: ^6.3.0
+  url_launcher: ^6.3.1
   url_strategy: ^0.3.0
-  hooks_riverpod: ^2.5.2
+  hooks_riverpod: ^2.6.1
   flutter_hooks: ^0.20.5
-  webview_flutter_web: ^0.2.3+2
-  webview_flutter: ^4.9.0
+  webview_flutter_web: ^0.2.3+4
+  webview_flutter: ^4.10.0
 
 dev_dependencies:
   flutter_test:
