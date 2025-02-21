@@ -23,6 +23,6 @@ Using the bloc library allows us to separate our application into three layers:
    - Data Provider
   
 # Video and Blog (In spanish)
-Also, I created an article in spanish in [my Blog](https://es.yayocode.com/2021/07/flutter-challenge-la-mejor-arquitectura.html)
+Also, I created an article in spanish in [my Blog](https://yayocode.com/2022/12/09/fluttter_challenge_the_best_architecture_taiwan/)
 
-[![Youtube](youtube.jpg)](https://youtu.be/ng1-co3QhIg)
+[![Youtube](screenshots/youtube.png)](https://youtu.be/ng1-co3QhIg)
